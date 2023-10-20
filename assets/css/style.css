@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-content {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Adiciona espaçamento à direita e à esquerda */
+}
+
+.imgnav img {
+    width: 150px;
+}
+
+.contact-info {
+    color: rgb(0, 0, 79);
+    text-align: right;
+    /* Alinha o texto à direita */
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    /* Adiciona espaçamento à esquerda */
+}
+
+.navbar {
+    background-color: rgb(0, 0, 79);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre a lista e os ícones */
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #19f7ff;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.fa-dog {
+    color: white;
+    /* Cor laranja para o ícone de cachorro */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    margin-right: 10px;
+    /* Espaçamento à direita */
+
+}
+
+.fa-cat {
+    color: white;
+    /* Cor verde para o ícone de gato */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    margin-right: 10px;
+    /* Espaçamento à direita */
+}
+
+.fa-crow {
+    color: white;
+    /* Cor azul para o ícone de pássaros */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    margin-right: 10px;
+    /* Espaçamento à direita */
+}
+
+.comeco1 {
+    position: relative;
+}
+
+.comeco1-image {
+    width: 100%;
+    max-width: 100%;
+    height: 730px;
+    box-shadow: 2px 2px 4px rgba(113, 210, 240, 0.8);
+}
+
+.comeco2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comeco2-image {
+    width: 40%;
+    /* Ajuste o tamanho da imagem conforme necessário */
+    display: block;
+    margin: 0 auto;
+    /* Centralize a imagem horizontalmente */
+
+}
+
+.comeco2-text {
+    color: #ffffff;
+    /* Tom escuro */
+    font-weight: bold;
+    /* Texto em negrito */
+    font-size: 50px;
+    /* Tamanho da fonte, ajuste conforme necessário */
+    margin-right: 50px;
+    font-family: 'Rowdies', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.comeco2-texto {
+    background-color: rgb(214, 255, 206);
+    color: #21a700;
+    text-align: center;
+    /* Tom escuro */
+    font-weight: bold;
+    /* Texto em negrito */
+    font-size: 40px;
+    /* Tamanho da fonte, ajuste conforme necessário */
+    margin-right: 160px;
+    font-family: 'Rowdies', sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+
+
+}
+.comeco3 {
+    display: flex;
+    background-color: rgb(214, 255, 206);
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+    color: rgb(2, 2, 126);
+}
+
+.container2 {
+    flex: 1;
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 100px;
+    
+}
+
+.card {
+    width: 800px; /* Defina o valor de width que deseja */
+   
+    padding: 20px;
+    border: 3px solid #ffffff; /* Cor de borda para Vacinas e Acessórios */
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ebf8ef;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #3498db; /* Cor do texto para Serviços e Petshop */
+    font-family: 'Young Serif', serif;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.card ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Young Serif', serif;
+}
+
+.card h3 {
+    font-size: 19px;
+    margin-top: 10px;
+    color: #e74c3c; /* Cor do texto para Vacinas e Acessórios */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* Estilos específicos para os subtítulos */
+.card:nth-child(2n+1) {
+    border: 3px solid #ffffff; /* Cor de borda para Vacinas e Acessórios */
+}
+
+.card:nth-child(2n+1) h2 {
+    color: #e74c3c; /* Cor do texto para Vacinas e Acessórios */
+    font-family: 'Young Serif', serif;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
+    color: #f5f5f5;
+    margin-top: 5%;
+}
+
+#footer_content{
+    background-color: rgb(0, 0, 79);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h2{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#twitter{
+    background-color: #3E8AFF;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+#footer_social_media .footer-link i{
+    font-size: 1.2rem;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-list .footer-link{
+    color: #a8a29e;
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover{
+    color: #00ccff;
+    text-decoration: none;
+}
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color: #a8a29e;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: 4px;
+    border-radius: 4px;
+}
+#input_group input{
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button{
+    background-color: #00ccff;
+    border: none;
+    color: #f5f5f5;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group:hover{
+    opacity: 0.8s;
+    text-decoration: none;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 1, 54);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+@media screen and (max-width: 768px) {
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
