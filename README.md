@@ -1,3 +1,6 @@
+<br>
+<br>
+<br>
 <p align="center">
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=true&vCenter=true&repeat=false&width=435&lines=PetPlus" alt="Typing SVG" /></a>
 </p>
