@@ -2,37 +2,67 @@
 <br>
 <br>
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=true&vCenter=true&repeat=false&width=435&lines=PetPlus" alt="Typing SVG" /></a>
+   <img src="/imgs/imgsHome/logo.png" alt="logo" width=250px>
 </p>
+
 <p align="center">
-   <img src="https://img.shields.io/badge/Site-DOING-blue?style=for-the-badge" alt="versão desktop" />
-  <img src="https://img.shields.io/badge/Mobile-DOING-blue?style=for-the-badge" alt="versão mobile" />
-  <img src="https://img.shields.io/badge/Documentation-DOING-blue?style=for-the-badge" alt="documentação" />
-  <img src="https://img.shields.io/badge/Backend-DOING-blue?style=for-the-badge" alt="backend" />
+   <img src="https://img.shields.io/badge/Backend-FAZENDO-blue?style=for-the-badge" alt="versão desktop" />
+  <img src="https://img.shields.io/badge/Documentação-FAZENDO-blue?style=for-the-badge" alt="versão mobile" />
+  <img src="https://img.shields.io/badge/Mobile-FAZENDO-blue?style=for-the-badge" alt="documentação" />
+  <img src="https://img.shields.io/badge/Site-FAZENDO-blue?style=for-the-badge" alt="backend" />
 </p>
 <hr>
 <br>
-<br>
+<br><br><br>
 
-## Introdução 👋
+<p align="left">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Introdução 👋" alt="Typing SVG" /></a>
+   <p>
+      lorem ipsum dolor
+   </p>
+</p>
 
-Bem-vindo à documentação do Projeto X! Aqui você encontrará informações sobre o que é o projeto, sua finalidade e como ele é desenvolvido.
+<p align="left">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Descrição 👋" alt="Typing SVG" /></a>
+   <p>
+      lorem ipsum dolor
+   </p>
+</p>
 
-## Quem Nós Somos
+<p align="left">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Telas e Visuais 👋" alt="Typing SVG" /></a>
+   <p>
+      lorem ipsum dolor
+   </p>
+</p>
 
-Somos uma equipe dedicada de desenvolvedores apaixonados por criar soluções inovadoras. Nosso objetivo é proporcionar experiências incríveis para nossos usuários.
-
-## Ferramentas Utilizadas
-
-Aqui estão as linguagens e frameworks que utilizamos no desenvolvimento do Projeto X:
-
-| Linguagens   | Frameworks   |
-|--------------|--------------|
-| Python       | Django       |
-| JavaScript   | React        |
-| HTML/CSS     | Bootstrap    |
-| SQL          | PostgreSQL   |
-| ...          | ...          |
+<p align="left">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Ferramentas Utilizadas 👋" alt="Typing SVG" /></a>
+   <p>
+      <table>
+  <thead>
+    <tr>
+      <th> Linguagens </th>
+      <th> Frameworks </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> lorem </td>
+      <td> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"/> </td>
+    </tr>
+    <tr>
+      <td> lorem </td>
+      <td> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"/> </td>
+    </tr>
+    <tr>
+      <td> lorem </td>
+      <td> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge"/> </td>
+    </tr>
+  </tbody>
+</table>
+   </p>
+</p>
 
 
 
