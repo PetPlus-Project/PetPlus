@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Backend-FAZENDO-blue?style=for-the-badge" alt="versão desktop" />
-  <img src="https://img.shields.io/badge/Documentação-FAZENDO-blue?style=for-the-badge" alt="versão mobile" />
-  <img src="https://img.shields.io/badge/Mobile-FAZENDO-blue?style=for-the-badge" alt="documentação" />
-  <img src="https://img.shields.io/badge/Site-FAZENDO-blue?style=for-the-badge" alt="backend" />
+   <img src="https://img.shields.io/badge/Backend-FAZENDO-blue?style=for-the-badge" alt="backend" />
+  <img src="https://img.shields.io/badge/Documentação-FAZENDO-blue?style=for-the-badge" alt="documentação" />
+  <img src="https://img.shields.io/badge/Mobile-FAZENDO-blue?style=for-the-badge" alt="mobile" />
+  <img src="https://img.shields.io/badge/Site-FAZENDO-blue?style=for-the-badge" alt="site" />
 </p>
 <hr>
 <br>
@@ -74,7 +74,35 @@
    <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Desenvolvedores do Projeto 👋" alt="Typing SVG" /></a>
     <p>
-      lorem ipsum dolor
+<div align=center>
+  <table style="width: 100%">
+    <tbody>
+      <tr align=center>
+        <th><strong> Ramon X. Camargo </br> RamonCamarg </strong></th>
+        <th><strong> Vinícius G. Feitoza </br> epicestudar </strong></th>
+        <th><strong> Rhenan X. Neves </br> rhenanneves12 </strong></th>
+      </tr>
+      <tr align=center>
+        <td>
+          <a href="https://github.com/RamonCamarg">
+            <img width="250" height="250" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/RamonCamarg">
+          </a>
+        </td>
+        <td>
+          <a href="https://github.com/epicestudar">
+            <img width="250" height="250" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/epicestudar">
+          </a>
+        </td>
+        <td>
+          <a href="https://github.com/orgs/PetPlus-Project/people/rhenanneves12">
+            <img width="250" height="250" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/rhenanneves12">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
    </p>
    <p> <br><br>
 
