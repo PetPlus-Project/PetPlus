@@ -48,16 +48,16 @@
   </thead>
   <tbody>
     <tr>
-      <td> lorem </td>
-      <td> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap badge"/> </td>
     </tr>
     <tr>
-      <td> lorem </td>
-      <td> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge" style="width: 100%"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="angular badge" style="width: 100%"/> </td>
     </tr>
     <tr>
-      <td> lorem </td>
-      <td> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge"/> </td>
+      <td align="center"> <img  width="100" height="30"; src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP badge"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="laravel badge" style="width: 100%"/> </td>
     </tr>
   </tbody>
 </table>
