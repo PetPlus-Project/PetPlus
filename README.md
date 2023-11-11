@@ -1,5 +1,3 @@
-link liveshare: https://prod.liveshare.vsengsaas.visualstudio.com/join?2F1A7E89F1912AFE090DF4302CBEF008F78D
-
 <br>
 <br>
 <br>
