@@ -7,7 +7,7 @@ footer{
 }
 
 #footer_content{
-    background-color: rgb(66, 147, 223);
+    background-color: rgb(123, 179, 232);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -64,7 +64,7 @@ footer{
     list-style: none;
 }
 .footer-list .footer-link{
-    color: #a8a29e;
+    color: #000000;
     transition: all 0.4s;
 }
 .footer-list .footer-link:hover{

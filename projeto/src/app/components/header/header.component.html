@@ -9,7 +9,39 @@
     <script defer src="/projeto/src/assets/js/index.js"></script>
 </head>
 <body>
-    <img src="..//..//..//assets/img/cachorro.png" alt="">
+
+    <header>
+        <div class="header-content">
+            <div class="imgnav">
+                <a href="#"><img [src] ="ImageLogo"></a>
+            </div>
+    
+            <div class="search-input">
+                <div class="icon-search"></div>
+    
+                <div class="searching">
+                    <input type="text" placeholder="Digite aqui..." id="mysearch">
+                   </div> 
+    
+                   <span class="clear" onclick="document.getElementById('mysearch').value = ''">
+    
+                   </span>
+            </div>
+            <div class="btn-header">
+               <button type="button">Entrar</button>
+               <button type="button">Crie sua Conta</button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Agendamento</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
    
 </body>
 </html>
