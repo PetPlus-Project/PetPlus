@@ -7,7 +7,7 @@ footer{
 }
 
 #footer_content{
-    background-color: rgb(123, 179, 232);
+    background-color: rgb(45, 68, 90);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -62,13 +62,14 @@ footer{
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    color: #000000;
 }
 .footer-list .footer-link{
-    color: #000000;
+    color: #b1d0ff;
     transition: all 0.4s;
 }
 .footer-list .footer-link:hover{
-    color: #00ccff;
+    color: #35cef5;
     text-decoration: none;
 }
 #footer_subscribe{
@@ -110,7 +111,7 @@ footer{
 #footer_copyright{
     display: flex;
     justify-content: center;
-    background-color: rgb(1, 1, 54);
+    background-color: rgb(0, 0, 0);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
