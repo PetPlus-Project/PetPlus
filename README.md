@@ -2,7 +2,7 @@
 <br>
 <br>
 <p align="center">
-   <img src="/imgs/imgsHome/logo2.png" alt="logo" width=250px>
+   <img src="/projeto/src/assets/logo/logo.png" alt="logo" width=250px>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Introdução 👋" alt="Typing SVG" /></a>
    <p>
-      Esta documentação será atualizada aos poucos até o dia da entrega do projeto
+      Seja bem-vindo(a) à nossa documentação deste projeto. Aqui você encontrará uma descrição sobre o que se trata o nosso site, os frameworks que utilizamos tanto para o frontend quanto para o backend, além de imagens mostrando o site, os desenvolvedores do projeto, nossas maiores dificuldades e referências nas quais nos baseamos e pegamos informações.
    </p>
 </p> <br><br>
 
