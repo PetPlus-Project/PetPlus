@@ -1,0 +1,9 @@
+.img-fluid{
+    width: 50%;
+    height: 50%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

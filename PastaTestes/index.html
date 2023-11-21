@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <script defer src="/assets/js/index.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #carousel-container {
+            overflow: hidden;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            flex: 0 0 30%;
+            /* Ajuste de largura dos cards conforme necessário */
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+            background-color: #ddd;
+            border: none;
+            padding: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <div class="imgnav">
-                <img src="/imgs/imgsHome/logo2.png" alt="">
+
+    <div id="carousel-container">
+        <div id="carousel-wrapper">
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>Description for Card 1.</p>
+                </div>
             </div>
-
-            <div class="search-input">
-                <div class="icon-search"></div>
-
-                <div class="searching">
-                    <input type="text" placeholder="Digite aqui..." id="mysearch">
-                   </div> 
-
-                   <span class="clear" onclick="document.getElementById('mysearch').value = ''">
-
-                   </span>
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 2">
+                <div class="card-content">
+                    <h3>Card 2</h3>
+                    <p>Description for Card 2.</p>
+                </div>
             </div>
-            <div class="btn-header">
-               <button type="button">Entrar</button>
-               <button type="button">Crie sua Conta</button>
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 3">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>Description for Card 3.</p>
+                </div>
             </div>
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 3">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>Description for Card 3.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 3">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>Description for Card 3.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placekitten.com/300/200" alt="Card 3">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>Description for Card 3.</p>
+                </div>
+            </div>
+            <!-- Repeat the above structure for additional cards -->
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Agendamento</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-
-     <!-- Rodapé do site -->
-<footer>
-    <div id="footer_content">
-        <div id="footer_contacts">
-            <h2>PetPlus</h2>
-            <p>Conforto com Estilo!</p>
-
-            <div id="footer_social_media">
-                <a href="https://www.instagram.com" class="footer-link" id="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="https://twitter.com" class="footer-link" id="twitter">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-
-                <a href="https://facebook.com" class="footer-link" id="facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
-
-
-        </div>
-
-        <ul class="footer-list">
-            <li>
-                <h3>Fale Conosco</h3>
-            </li>
-
-            <li>
-                <a href="" class="footer-link">SAC</a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link">Suporte</a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link">Contatos</a>
-            </li>
-        </ul>
-
-        <ul class="footer-list">
-            <li>
-                <h3>Produtos</h3>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link">Categorias</a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link">Mais Recentes</a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link">Mais Vendidos</a>
-            </li>
-        </ul>
-
-        <div id="footer_subscribe">
-            <h3>Inscreva-se</h3>
-            <p>Coloque o seu email para ser notificado sobre nossos novos livros</p>
-
-            <div id="input_group">
-                <input type="email" id="email">
-                <button><i class="fa-regular fa-envelope"></i></button>
-            </div>
-        </div>
-
+        <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-button next" onclick="nextSlide()">❯</button>
     </div>
 
-    <div id="footer_copyright">
-        PetPlus &#169
-        2023 all rights reserved
-    </div>
-</footer>
+    <script>
+        const carouselWrapper = document.getElementById('carousel-wrapper');
+
+        function nextSlide() {
+            carouselWrapper.style.transform = 'translateX(-33.333%)';
+        }
+
+        function prevSlide() {
+            carouselWrapper.style.transform = 'translateX(0)';
+        }
+    </script>
+
 </body>
+
 </html>
