@@ -1,4 +1,3 @@
-https://prod.liveshare.vsengsaas.visualstudio.com/join?9B2570E7EC3D7F9F60232C67121E2186EA82
 <br>
 <br>
 <br>
