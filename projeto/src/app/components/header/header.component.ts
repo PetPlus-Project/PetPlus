@@ -9,11 +9,13 @@ export class HeaderComponent implements OnInit {
   
   ImagePath: string;
   ImageLogo: string;
+  ImageFundo: string;
   
   constructor() {
     //image location
     this.ImagePath = '/assets/img/cachorro.png',
     this.ImageLogo = '/assets/logo/logo.png'
+    this.ImageFundo = '/assets/img/Fundo/fundo.png'
   }
   
   ngOnInit() {
