@@ -11,3 +11,14 @@
 .title-marcas{
     margin-left: 5%;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}

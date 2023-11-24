@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
   ImageCard1: string;
+  ImageMarca1: string;
 
   constructor() {
      //image location
      this.ImageCard1 = '/components/imgs/imgCards/card1.png'
+     this.ImageMarca1 = '/components/imgs/imgMarcas/marca1.jpg'
   }
 
   ngOnInit() {
