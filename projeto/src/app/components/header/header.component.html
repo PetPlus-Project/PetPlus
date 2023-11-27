@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,38 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <script defer src="/projeto/src/assets/js/index.js"></script>
 </head>
-<body>
 
+<body>
     <header>
-        <div class="header-content">
-            <div class="imgnav">
-                <a href="#"><img [src] ="ImageLogo"></a>
-            </div>
-    
+
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <a href="">Home</a>
+                    <a href="">Produtos</a>
+                </div>
+                <div class="navbar-center">
+                    <img [src]="ImageLogo">
+                </div>
+               <div class="navbar-right">
+                <a href="">Faça seu Login</a>
+                <a href="">Faça seu Cadastro</a>
+               </div>
+            
+            </nav>
+
             <div class="search-input">
                 <div class="icon-search"></div>
-    
+
                 <div class="searching">
                     <input type="text" placeholder="O que seu Pet precisa?" id="mysearch">
-                   </div> 
-    
-                   <span class="clear" onclick="document.getElementById('mysearch').value = ''">
-    
-                   </span>
+                </div>
+
+                <span class="clear" onclick="document.getElementById('mysearch').value = ''">
+
+                </span>
             </div>
-            <div class="btn-header">
-               <button type="button">Entrar</button>
-               <button type="button">Crie sua Conta</button>
-            </div>
-        </div>
-        <nav class="navbar">
-           <a href="">Home</a>
-           <a href="">Produtos</a>
-        </nav>
     </header>
-   
+
 </body>
+
 </html>

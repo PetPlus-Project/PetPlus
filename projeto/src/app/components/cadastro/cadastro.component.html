@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.component.css">
+  <title>Registro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <form action="process_form.php" method="post" class="flex-container">
+      <div class="form-section">
+        <label for="fullName">Nome Completo:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="dob">Data de Nascimento:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Celular:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirmar Senha:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Cadastrar</button>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="benefits-section">
+        <h2>Benefícios de Criar uma Conta</h2>
+        <ul>
+          <li>Acesso a recursos exclusivos</li>
+          <li>Promoções e descontos especiais</li>
+          <li>Acompanhamento de pedidos</li>
+          <li>Comunicação personalizada</li>
+        </ul>
+        <img src="img/_344ec6c7-3b12-4b7d-93c1-3429c1fd2af6-removebg-preview.png"  >
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

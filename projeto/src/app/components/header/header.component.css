@@ -4,23 +4,24 @@
     box-sizing: border-box;
 }
 
-/* header{
+header{
     background-image: url('..//..//..//assets/img/Fundo/fundo.png');
     background-size: cover;
     background-repeat: 100% 0;
-} */
+}
 
 .header-content {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    /* background-color: rgb(255, 255, 255); */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 10px 20px; */
     /* Adiciona espaçamento à direita e à esquerda */
 }
 
-.imgnav img {
-    width: 150px;
+.navbar-center img {
+    width: 200px;
 }
 .search-input{
     position: relative;
@@ -37,7 +38,7 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: transparent;
     border-radius: 60px;
     display: flex;
     justify-content: center;
@@ -85,63 +86,23 @@
     outline: none;
     font-size: 18px;
 }
-.clear{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    right: 15px;
-    background: #ffffff;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.searching #mysearch{
+    background: transparent;
 }
-.clear::before{
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 15px;
-    background: #999;
-    transform: rotate(45deg);
-
-}
-.clear::after{
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 15px;
-    background: #999;
-    transform: rotate(315deg);
-
-}
-
-
-.btn-header {
-    display: inline-block;
-}
-.btn-header button {
-    margin: 5px;
-    background-color: rgb(81, 82, 84);
-    color: white;
-    padding: 20px 30px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-header button:hover {
-    background-color: lightblue;
+.searching ::placeholder{
     color: black;
 }
-.navbar{
+.navbar .navbar-center{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
+.navbar-left a{
+    
+}
+
 .navbar a{
+    
     position: relative;
     display: inline-block;
     font-size: 1.5em;

@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* Cinza claro de fundo */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    width: 60%;
+    /* Ajuste a largura conforme necessário */
+    background-color: #fff;
+    /* Fundo branco para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+  }
+  
+  .form-section,
+  .benefits-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #dcdcdc;
+    /* Cinza claro */
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #87CEFA;
+    /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4682b4;
+    /* Azul mais escuro ao passar o mouse */
+  }
+  
+  .benefits-section h2 {
+    color: rgb(45, 5, 5);
+    font-size: 42px;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+  }
+  
+  .benefits-section ul {
+    padding: 0;
+    font-size: 25px;
+  
+  }
+  
+  .benefits-section li {
+    color: rgb(103, 66, 66);
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .benefits-section img {
+    width:300px;
+    margin-left: 60px;
+  }
+  .linha-vertical {
+    border-left: 1px solid #000; /* Cor e espessura da linha */
+    height: 700px; /* Altura da linha */
+    margin: 0 20px; /* Espaçamento à esquerda e à direita da linha */
+  }

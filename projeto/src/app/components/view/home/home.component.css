@@ -22,3 +22,8 @@ td {
     border: 1px solid black;
     padding: 10px;
 }
+.carousel-item img {
+    width: 1060px;
+    border-radius: 20px;
+    height: 190px;
+}

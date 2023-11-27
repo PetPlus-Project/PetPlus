@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit{
   ImageMarca6: string;
   ImageMarca7: string;
 
+  ImageCarrossel1: string;
+  ImageCarrossel2: string;
+  ImageCarrossel3: string;
+
   constructor() {
      //image location
      this.ImageCard1 = '/components/imgs/imgCards/card1.png'
@@ -25,6 +29,9 @@ export class HomeComponent implements OnInit{
      this.ImageMarca5 = '/assets/img/imgMarcas/marca5.jpg'
      this.ImageMarca6 = '/assets/img/imgMarcas/marca6.jpg'
      this.ImageMarca7 = '/assets/img/imgMarcas/marca7.jpg'
+     this.ImageCarrossel1 = '/assets/img/imgCarrossel/image1.jpg'
+     this.ImageCarrossel2 = '/assets/img/imgCarrossel/image2.gif'
+     this.ImageCarrossel3 = '/assets/img/imgCarrossel/image3.jpg'
   }
 
   ngOnInit() {
