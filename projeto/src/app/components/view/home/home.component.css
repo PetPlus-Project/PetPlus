@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.carousel-inner{
+    margin-top: 5%;
+}
 .img-fluid{
     width: 50%;
     height: 50%;
+    margin-top: 5%;
 }
 .card{
     display: flex;
@@ -26,4 +32,35 @@ td {
     width: 1060px;
     border-radius: 20px;
     height: 190px;
+}
+.card{
+    border-color: black;
+    height: 620px;
+}
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 7%;
+}
+.price-cards
+{
+   text-align: center;
+    color: black;
+    text-decoration: none;
+   border: none;
+    transition: color 1s, box-shadow 1s;
+    transition-delay: 0s 1s;
+    background: #fff;
+    letter-spacing: 1px;
+}
+.price-cards{
+    margin-top: 15%;
+}
+.card-text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.card-body{
+    text-align: center;
 }

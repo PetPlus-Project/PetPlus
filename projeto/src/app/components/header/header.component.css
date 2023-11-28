@@ -19,8 +19,10 @@ header{
     /* padding: 10px 20px; */
     /* Adiciona espaçamento à direita e à esquerda */
 }
-
-.navbar-center img {
+.logo{
+    width: 0px;
+}
+.logo img {
     width: 200px;
 }
 .search-input{
@@ -31,6 +33,9 @@ header{
     transition: 0.5s;
     box-shadow: 0 0 0 5px #508ef1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search-input .icon-search{
     position: absolute;
