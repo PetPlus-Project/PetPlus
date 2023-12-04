@@ -56,6 +56,9 @@ td {
 .price-cards{
     margin-top: 15%;
 }
+.price-cards:hover{
+    background: purple;
+}
 .card-text{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
