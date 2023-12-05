@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    /* Cinza claro de fundo */
+  
   }
   
   .container {
@@ -14,12 +13,13 @@ body {
   }
   
   form {
+    border-radius: 30px;
     display: flex;
-    width: 60%;
+    width: 80%;
     /* Ajuste a largura conforme necessário */
     background-color: #fff;
     /* Fundo branco para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.651);
     /* Sombra suave */
   }
   
@@ -48,7 +48,7 @@ body {
   button {
     width: 100%;
     padding: 10px;
-    background-color: #87CEFA;
+    background-color: #14a2fa;
     /* Azul claro */
     color: white;
     border: none;
@@ -88,3 +88,18 @@ body {
     height: 700px; /* Altura da linha */
     margin: 0 20px; /* Espaçamento à esquerda e à direita da linha */
   }
+  .login-message {
+    font-size: 18px;
+    color: #4682b4; /* Cor azul destacada, ajuste conforme necessário */
+    font-weight: bold;
+    margin-top: 20px; /* Espaçamento superior para separar da seção anterior */
+}
+
+.login-message a {
+    color: #4682b4; /* Mantenha a mesma cor para o link */
+    text-decoration: underline; /* Adiciona sublinhado para indicar que é um link */
+}
+
+.login-message a:hover {
+    color: #1e416b; /* Cor mais escura ao passar o mouse sobre o link */
+}

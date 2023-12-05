@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+
 .carousel-inner{
     margin-top: 5%;
 }
-.img-fluid{
-    width: 50%;
-    height: 50%;
-    margin-top: 5%;
+.card {
+    border-color: black;
+    height: 350px; /* Ajuste a altura conforme necessário */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
 }
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.img-fluid {
+   margin-left: 90px;
+   margin-top: 5%   ;
 }
 
 .title-marcas{
@@ -37,33 +38,44 @@ td {
     border-color: black;
     height: 620px;
 }
-.card-title{
-    font-family: 'Roboto', sans-serif;
+.card-title {
+    font-family: 'Barlow', sans-serif;
     text-align: center;
-    margin-top: 7%;
+    color: #333; /* Cor do texto */
 }
-.price-cards
-{
-   text-align: center;
-    color: black;
-    text-decoration: none;
-   border: none;
-    transition: color 1s, box-shadow 1s;
-    transition-delay: 0s 1s;
-    background: #fff;
-    letter-spacing: 1px;
+
+.price-cards {
+    text-align: center;
+    color: white; /* Cor do texto */
+    background: rgb(1, 139, 35);
+    border: none;
+    transition: background 0.5s, color 0.5s;
+    border-radius: 60px;
+   text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.432); 
+   
 }
-.price-cards{
-    margin-top: 15%;
+.price-cards:hover {
+    background: rgb(0, 85, 0); /* Altere a cor de fundo ao passar o mouse */
 }
-.price-cards:hover{
-    background: purple;
-}
-.card-text{
+.card-text {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+    color: #666; /* Cor do texto */
 }
 .card-body{
     text-align: center;
+    margin-top: 10px; /* Ajuste a margem conforme necessário */
+}
+.container-marcas table {
+    width: 100%; /* Garante que a tabela ocupa toda a largura do container */
+    border-collapse: collapse; /* Remove espaçamento entre as células */
+}
+.container-marcas td {
+    width: 20%; /* Defina a largura desejada para cada célula, 20% para 5 colunas */
+    text-align: center; /* Centraliza a imagem dentro da célula */
+}
+.container-marcas img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da célula */
+    height: auto; /* Mantém a proporção original da imagem */
 }
