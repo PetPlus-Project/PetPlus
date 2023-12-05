@@ -46,13 +46,17 @@ td {
 
 .price-cards {
     text-align: center;
-    color: white; /* Cor do texto */
+    color: white;
     background: rgb(1, 139, 35);
     border: none;
     transition: background 0.5s, color 0.5s;
     border-radius: 60px;
-   text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.432); 
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.432); 
    
+   
+}
+.price-cards h4 {
+    margin-top: 10px;
 }
 .price-cards:hover {
     background: rgb(0, 85, 0); /* Altere a cor de fundo ao passar o mouse */

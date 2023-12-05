@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.component.css">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <form action="process_login.php" method="post" class="flex-container">
+      <div class="form-section">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="benefits-section">
+        <h2>Bem-vindo de volta!</h2>
+        <img src="assets/logo/logo.png" alt="Imagem 8">
+        <p class="login-message">Ainda não tem uma conta? <a href="/cadastro">Registre-se aqui</a>.</p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

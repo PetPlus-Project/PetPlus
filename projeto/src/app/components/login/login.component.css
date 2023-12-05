@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+form {
+    border-radius: 30px;
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.651);
+}
+
+.form-section,
+.benefits-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.benefits-section img{
+    width: 150px;
+    margin-left: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #14a2fa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+
+.benefits-section h2 {
+    color: rgb(45, 5, 5);
+    font-size: 42px;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+
+.login-message {
+    font-size: 18px;
+    color: #4682b4;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.login-message a {
+    color: #4682b4;
+    text-decoration: underline;
+}
+
+.login-message a:hover {
+    color: #1e416b;
+}
