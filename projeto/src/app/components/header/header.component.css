@@ -88,6 +88,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .search-input .searching input{
     position: absolute;
@@ -97,6 +98,7 @@ header {
     border: none;
     outline: none;
     font-size: 18px;
+    color: white;
 }
 .searching #mysearch{
     background: transparent;
@@ -154,19 +156,16 @@ header {
 }
 
 .banner{
-    margin-top: 10%;
+    margin-top: 30%;
     width: 100%;
-    height: 110vh;
+    height: 140vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .container-img{
-    width: 50%;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; */
+    width: 70%;
+    display: block;
 }
 .container-img img{
     width: 950px;
@@ -180,7 +179,7 @@ header {
     color: white;
 }
 .container-texto p{
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 5%;
     color: white;
     font-family: 'Arial', sans-serif;

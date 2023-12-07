@@ -29,6 +29,10 @@ td {
     border: 1px solid black;
     padding: 10px;
 }
+td img{
+    /* width: 150px;
+    height: 50px; */
+}
 .carousel-item img {
     width: 1060px;
     border-radius: 20px;
@@ -41,7 +45,8 @@ td {
 .card-title {
     font-family: 'Barlow', sans-serif;
     text-align: center;
-    color: #333; /* Cor do texto */
+    color: #202020; /* Cor do texto */
+    font-weight: 500;
 }
 
 .price-cards {
@@ -63,7 +68,7 @@ td {
 }
 .card-text {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial';
     font-size: 1.1em;
     color: #666; /* Cor do texto */
 }
@@ -82,4 +87,8 @@ td {
 .container-marcas img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura da célula */
     height: auto; /* Mantém a proporção original da imagem */
+}
+.texto-marcas{
+    margin-top: 7%;
+    margin-left: 8%;
 }
