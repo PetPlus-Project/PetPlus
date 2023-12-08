@@ -42,7 +42,7 @@
 
    ### - Antes de começarmos a produzir qualquer coisa, precisávamos antes definir nossas metas e objetivos a cada semana, com o intuito de não nos perdermos e termos um pouco de organização.
 
-   ### - Caso queira ver as metas que definimos a cada semana, [clique aqui](https://trello.com/b/7hb7htn4/projeto-pwbe-pwfe-2023).
+   ### - Caso queira ver as metas que definimos a cada semana, [clique aqui](https://github.com/PetPlus-Project/PetPlusAtualizado/blob/main/Docs/briefing.md).
 </p> <br><br>
 
 <p align="left">
