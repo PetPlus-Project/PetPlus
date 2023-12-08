@@ -154,4 +154,68 @@ header {
 .navbar a:hover::before{
     width: 100%;
 }
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
 
+
+@media (max-width: 1090px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 37vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color)
+    }
+    .navbar.open{
+        right: 2%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .navbar {
+        flex-direction: row; /* Restaura o layout para linha */
+        justify-content: space-around; /* Distribui os itens uniformemente */
+    }
+
+    .navbar a {
+        margin: 0; /* Remove a margem aplicada anteriormente */
+    }
+}
+
+/* Media Query para telas grandes (largura acima de 992px) */
+@media screen and (min-width: 993px) {
+    .navbar {
+        flex-direction: row; /* Mantém o layout para linha */
+        justify-content: space-evenly; /* Distribui os itens uniformemente */
+    }
+
+    .navbar a {
+        margin: 10px; /* Restaura a margem para o valor original */
+    }
+}

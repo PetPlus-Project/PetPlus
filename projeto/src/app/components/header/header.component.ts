@@ -20,8 +20,16 @@ export class HeaderComponent implements OnInit {
     this.ImageFundo2 = '/assets/img/Fundo/walpapper.jpeg'
   }
   
-  ngOnInit() {
-    
+  ngOnInit(): void {
+    const menu = document.querySelector('#menu-icon') as HTMLElement | null;
+const navbar = document.querySelector('.navbar') as HTMLElement | null;
+
+if (menu && navbar) {
+  menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+  };
+}
   }
 
 }
