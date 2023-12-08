@@ -102,10 +102,14 @@ border: dashed black;
   .map-container iframe{
     width: 100%;
   }
+  .banner-centralizar-texto{
+    background-color: rgb(1, 1, 44);
+  }
   .banner{
-    margin-top: 2%;
+   
     width: 100%;
     display: flex;
+    
     /* align-items: center; */
 }
 
@@ -120,19 +124,20 @@ border: dashed black;
 }
 
 .container-texto{
+    margin-top: 5%;
     width: 50%;
     margin-right: 200px;
 }
 .container-texto h1{
     font-weight: 600;
     font-family: 'Lobster', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 .container-texto p{
     font-size: 1em;
     margin-top: 5%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Rethink Sans', sans-serif;
 }
 .container-texto span{
