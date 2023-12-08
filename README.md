@@ -41,6 +41,8 @@
    ### - O briefing é um `documento que servirá como um guia para a execução de um projeto`. Ele contém uma série de informações como: dados sobre a empresa, o mercado em que ela atua, o público ao qual ela se direciona e os seus objetivos com o projeto.
 
    ### - Antes de começarmos a produzir qualquer coisa, precisávamos antes definir nossas `metas` e `objetivos` a cada semana, com o intuito de não nos perdermos e termos um pouco de organização. Caso queira ver as metas que definimos a cada semana, [clique aqui](https://github.com/PetPlus-Project/PetPlusAtualizado/blob/main/Docs/briefing.md).
+
+   ### - Como público alvo, procuramos atingir as necessidades dos donos de pets que procuravam produtos de todos os tipos para os seus animais, desde rações e brinquedos comuns do dia a dia até mesmo produtos especiais para animais que possuem algum tipo de deficiência ou que já é idoso e está com a mobilidade baixa, como por exemplo uma cama ortopédica.
 </p> <br><br>
 
 <p align="left">
