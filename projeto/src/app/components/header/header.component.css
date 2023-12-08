@@ -155,35 +155,3 @@ header {
     width: 100%;
 }
 
-.banner{
-    margin-top: 30%;
-    width: 100%;
-    height: 140vh;
-    display: flex;
-    /* align-items: center; */
-}
-
-.container-img{
-    width: 70%;
-    display: block;
-}
-.container-img img{
-    width: 950px;
-}
-.container-texto{
-    width: 30%;
-}
-.container-texto h1{
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-.container-texto p{
-    font-size: 1em;
-    margin-top: 5%;
-    color: white;
-    font-family: 'Arial', sans-serif;
-}
-.container-texto span{
-    color: orange;
-}

@@ -92,3 +92,49 @@ td img{
     margin-top: 7%;
     margin-left: 8%;
 }
+/* SeuComponente.component.css */
+.map-container {
+   
+    height: 400px; /* Ajuste a altura conforme necessário */
+border: dashed black;
+
+  }
+  .map-container iframe{
+    width: 100%;
+  }
+  .banner{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+
+.container-img{
+    width: 70%;
+    display: block;
+    
+}
+.container-img img{
+    width: 950px;
+    filter: drop-shadow(5px 3px 10px rgba(0, 0, 0, 0.562)); /* Ajuste os valores conforme necessário */
+}
+
+.container-texto{
+    width: 50%;
+    margin-right: 200px;
+}
+.container-texto h1{
+    font-weight: 600;
+    font-family: 'Lobster', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.container-texto p{
+    font-size: 1em;
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+    font-family: 'Rethink Sans', sans-serif;
+}
+.container-texto span{
+    color: orange;
+}
