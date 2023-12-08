@@ -5,11 +5,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/view/home/home.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProdutosComponent } from './components/produtos/produtos.component';
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'cadastro', component: CadastroComponent},
-{path: 'login', component: LoginComponent}
+{path: 'login', component: LoginComponent},
+{path: 'produtos', component: ProdutosComponent}
 
 ];
 
