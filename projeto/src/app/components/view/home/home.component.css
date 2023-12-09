@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
 
 
 .carousel-inner{
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .card {
     border-color: black;
@@ -97,7 +98,7 @@ td img{
    
     height: 400px; /* Ajuste a altura conforme necessário */
 border: dashed black;
-
+margin-top: 5%;
   }
   .map-container iframe{
     width: 100%;
@@ -144,7 +145,52 @@ border: dashed black;
 .container-texto span{
     color: orange;
 }
-
+.title-map{
+    margin-top: 10%;
+    margin-left: 8%;
+}
+/* Adicione isso ao seu arquivo CSS global ou no estilo específico do componente */
+.carrinho-flutuante {
+    position: fixed;
+    top: 40px; /* Ajuste conforme necessário para a posição vertical desejada */
+    right: 1px; /* Ajuste conforme necessário para a posição horizontal desejada */
+    background: rgb(131, 123, 123);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(109, 105, 105, 0.1);
+    width: 20%; /* Ajuste conforme necessário para a largura desejada */
+    height: 100%; /* Ocupa 100% da altura da tela */
+    overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo ultrapassar a altura */
+    z-index: 1000; /* Certifique-se de que este valor seja maior do que outros elementos na página */
+  }
+.carrinho-flutuante h2{
+    color: aquamarine;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.carrinho-flutuante .produto-carrinho{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.carrinho-flutuante button{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+    background: rgb(85, 208, 238);
+    border: none;
+    transition: background 0.5s, color 0.5s;
+    border-radius: 60px;
+    text-shadow: 3px 2px 0px rgba(241, 238, 238, 0.432); 
+}
+.carrinho-flutuante button:hover{
+    background: rgb(68, 162, 185);
+}
+.carrinho-flutuante button span{
+   font-weight: 600;
+}
 /* Media Query para telas pequenas (largura até 576px) */
 @media screen and (max-width: 576px) {
     .banner {

@@ -8,6 +8,8 @@ import { HomeComponent } from './components/view/home/home.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { CarrinhoService } from './components/services/carrinho.service';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CarrinhoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

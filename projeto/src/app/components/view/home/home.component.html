@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -55,18 +56,18 @@
                     comunidade apaixonada de amantes de animais!</p>
             </div>
         </div>
-        </div>
+    </div>
     <div class="container mt-5">
         <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img [src]="ImageCarrossel1">
+                    <img src="assets/img/imgCarrossel/image1.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img [src]="ImageCarrossel2">
+                    <img src="assets/img/imgCarrossel/image2.gif" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img [src]="ImageCarrossel3">
+                    <img src="assets/img/imgCarrossel/image3.jpg" alt="">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
@@ -113,12 +114,13 @@
                                                 <p class="card-text">Cuide da saúde e bem-estar do seu fiel companheiro
                                                     com a Ração Premiatta, uma escolha premium para nutrição completa e
                                                     equilibrada.</p>
-                                                <button class="price-cards">
+                                                <button class="price-cards" (click)="adicionarAoCarrinho()">
                                                     <h4>R$ 263,99</h4>
                                                     <p>ou 3x de R$ 88,00</p>
                                                 </button>
                                             </div>
                                         </div>
+
 
                                     </div>
                                     <div class="col-md-4 mb-3">
@@ -277,6 +279,22 @@
             </div>
         </div>
     </section>
+    <!-- <div class="carrinho-flutuante" *ngIf="carrinhoItens.length > 0">
+        <h2>Carrinho de Compras</h2>
+        <div *ngFor="let item of carrinhoItens">
+          {{ item.nome }} - {{ item.preco }}
+        </div>
+        <span>Total: R$ {{ total.toFixed(2) }}</span>
+        <button (click)="finalizarCompra()">Finalizar Compra</button>
+      </div> -->
+    <div class="carrinho-flutuante" *ngIf="carrinhoItens.length > 0">
+        <h2>Carrinho de Compras</h2>
+        <div class="produto-carrinho" *ngFor="let item of carrinhoItens">
+            {{ item.nome }} - {{ item.preco }}
+        </div>
+        <span>Total: R$ {{ total.toFixed(2) }}</span>
+        <button (click)="finalizarCompra()"><span>Finalizar Compra</span></button>
+    </div>
     <hr>
     <section class="pt-5 pb-5">
         <div class="container">
@@ -1090,10 +1108,16 @@
     <br>
     <br>
     <!-- SeuComponente.component.html -->
-<div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4381.311964946869!2d-47.40163488647481!3d-22.570517259299688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f071be2e4f%3A0x1945451e2c5d4714!2sCl%C3%ADnica%20Veterin%C3%A1ria%20Nova%20Kairos!5e0!3m2!1spt-BR!2sbr!4v1702053961960!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-  
+    <div class="title-map">
+        <h2>Localização de Nossa Empresa:</h2>
+    </div>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4381.311964946869!2d-47.40163488647481!3d-22.570517259299688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f071be2e4f%3A0x1945451e2c5d4714!2sCl%C3%ADnica%20Veterin%C3%A1ria%20Nova%20Kairos!5e0!3m2!1spt-BR!2sbr!4v1702053961960!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
