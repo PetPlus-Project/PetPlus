@@ -1,27 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CarrinhoService } from '../../services/carrinho.service';
 
 @Component({
   selector: 'app-home',
-//   templateUrl: `
-//   <div class="card">
-//     <img class="img-fluid" style="max-width: 50%; height: auto;" src="assets/img/imgcards/racaopremiata.jpg" alt="">
-//     <div class="card-body d-flex flex-column justify-content-between">
-//       <h4 class="card-title">Ração Premiatta</h4>
-//       <p class="card-text">Cuide da saúde e bem-estar do seu fiel companheiro com a Ração Premiatta, uma escolha premium para nutrição completa e equilibrada.</p>
-//       <button class="price-cards" (click)="adicionarAoCarrinho()">
-//         <h4>R$ 263,99</h4>
-//         <p>ou 3x de R$ 88,00</p>
-//       </button>
-//     </div>
-//   </div>
-//   <app-carrinho></app-carrinho>
-// `,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [CarrinhoService]
 })
-export class HomeComponent{
+export class HomeComponent {
   carrinhoItens: any[] = [];
   total: number = 0;
   carrinhoAberto: boolean = false;
@@ -31,33 +17,31 @@ export class HomeComponent{
       this.carrinhoItens = items;
       this.atualizarTotal();
     });
+
+    this.carrinhoService.carrinhoAberto$.subscribe(aberto => {
+      this.carrinhoAberto = aberto;
+    });
   }
 
-  adicionarAoCarrinho() {
+  abrirCarrinho() {
+    this.carrinhoService.toggleCarrinho();
+  }
+
+  adicionarProdutoAoCarrinho() {
     const produto = {
       nome: 'Ração Premiatta',
       preco: 263.99,
       parcelas: 'ou 3x de R$ 88,00'
-      // Adicione mais detalhes do produto, se necessário
     };
-    this.carrinhoService.adicionarAoCarrinho(produto);
-    this.abrirCarrinho(); // Abre o carrinho ao adicionar um item
+    this.carrinhoService.adicionarProdutoAoCarrinho(produto);
+    this.carrinhoService.abrirCarrinho(); // Abre o carrinho após adicionar o produto
+  }
+  fecharCarrinho() {
+    this.carrinhoService.toggleCarrinho();
   }
 
   finalizarCompra() {
     // Lógica para finalizar a compra
-  }
-
-  toggleCarrinho() {
-    this.carrinhoAberto = !this.carrinhoAberto;
-  }
-
-  abrirCarrinho() {
-    this.carrinhoAberto = true;
-  }
-
-  fecharCarrinho() {
-    this.carrinhoAberto = false;
   }
 
   private atualizarTotal() {

@@ -114,7 +114,7 @@
                                                 <p class="card-text">Cuide da saúde e bem-estar do seu fiel companheiro
                                                     com a Ração Premiatta, uma escolha premium para nutrição completa e
                                                     equilibrada.</p>
-                                                <button class="price-cards" (click)="adicionarAoCarrinho()">
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho()">
                                                     <h4>R$ 263,99</h4>
                                                     <p>ou 3x de R$ 88,00</p>
                                                 </button>
@@ -280,20 +280,7 @@
             </div>
         </div>
     </section>
-    <!-- <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
-        <h2>Carrinho de Compras</h2>
-        <div *ngFor="let item of carrinhoItens; let i = index">
-            <div class="container-carrinho">
-                <div class="item-carrinho">
-                    {{ item.nome }} - {{ item.preco }}
-                    <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
-                </div>
-            </div>
-        </div>
-        <span>Total: R$ {{ total.toFixed(2) }}</span>
-        <button class="btnCompra" (click)="finalizarCompra()">Finalizar Compra</button>
-    </div> -->
-    <!-- Exibição do Carrinho de Compras -->
+
     <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
         <div class="carrinho-header">
             <h2>Carrinho de Compras</h2>
@@ -311,6 +298,7 @@
             <span>Total: R$ {{ total.toFixed(2) }}</span>
             <button class="btnCompra" (click)="finalizarCompra()">Finalizar Compra</button>
     </div>
+    <!-- Adicione isso para exibir o carrinho -->
     <hr>
     <section class="pt-5 pb-5">
         <div class="container">
