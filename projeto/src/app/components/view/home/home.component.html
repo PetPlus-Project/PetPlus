@@ -282,15 +282,6 @@
     </section>
     <!-- <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
         <h2>Carrinho de Compras</h2>
-        <div class="produto-carrinho" *ngFor="let item of carrinhoItens">
-          {{ item.nome }} - {{ item.preco }}
-          <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
-        </div>
-        <span>Total: R$ {{ total.toFixed(2) }}</span>
-        <button (click)="finalizarCompra()"><a href=""><span>Finalizar Compra</span></a></button>
-      </div> -->
-    <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
-        <h2>Carrinho de Compras</h2>
         <div *ngFor="let item of carrinhoItens; let i = index">
             <div class="container-carrinho">
                 <div class="item-carrinho">
@@ -301,6 +292,24 @@
         </div>
         <span>Total: R$ {{ total.toFixed(2) }}</span>
         <button class="btnCompra" (click)="finalizarCompra()">Finalizar Compra</button>
+    </div> -->
+    <!-- Exibição do Carrinho de Compras -->
+    <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
+        <div class="carrinho-header">
+            <h2>Carrinho de Compras</h2>
+            <button class="fechar-carrinho" (click)="fecharCarrinho()"><img src="assets/img/Carrinho/x.png"
+                    alt=""></button>
+        </div>
+        <div *ngFor="let item of carrinhoItens; let i = index">
+            <div class="container-carrinho">
+                <div class="item-carrinho">
+                    {{ item.nome }} - {{ item.preco }}
+                    <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
+                </div>
+            </div>
+        </div>
+            <span>Total: R$ {{ total.toFixed(2) }}</span>
+            <button class="btnCompra" (click)="finalizarCompra()">Finalizar Compra</button>
     </div>
     <hr>
     <section class="pt-5 pb-5">

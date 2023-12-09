@@ -52,13 +52,18 @@ export class HomeComponent{
     this.carrinhoAberto = !this.carrinhoAberto;
   }
 
-  private abrirCarrinho() {
+  abrirCarrinho() {
     this.carrinhoAberto = true;
+  }
+
+  fecharCarrinho() {
+    this.carrinhoAberto = false;
   }
 
   private atualizarTotal() {
     this.total = this.carrinhoItens.reduce((acc, item) => acc + item.preco, 0);
   }
+
   removerDoCarrinho(index: number) {
     this.carrinhoService.removerDoCarrinho(index);
   }

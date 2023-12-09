@@ -155,8 +155,8 @@ margin-top: 5%;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 40px; /* Ajuste conforme necessário para a posição vertical desejada */
-    right: 1px; /* Ajuste conforme necessário para a posição horizontal desejada */
+    top: 20px; /* Ajuste conforme necessário para a posição vertical desejada */
+    right: 0; /* Ajuste conforme necessário para a posição horizontal desejada */
     background: rgb(131, 123, 123);
     padding: 10px;
     border: 1px solid #ccc;
@@ -223,6 +223,44 @@ margin-top: 5%;
 }
 .carrinho-flutuante button a{
     text-decoration: none;
+}
+.carrinho-flutuante.minimizado {
+  transform: translateX(250px);
+}
+
+.carrinho-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.carrinho-header h2{
+    margin: 0;
+}
+
+.fechar-carrinho {
+    top: 0;
+    right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.fechar-carrinho img{
+    width: 10px;
+    height: 10px;
+}
+.fechar-carrinho:focus {
+    outline: none; /* Remove a borda de foco ao clicar */
+  }
+  .carrinho-header button:hover{
+    background: red;
+  }
+.minimizar-carrinho {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 /* Media Query para telas pequenas (largura até 576px) */

@@ -11,6 +11,12 @@ header {
     background-size: cover;
     background-repeat: 100% 0;
 }
+.carrinho img{
+    width: 100px;
+}
+.carrinho{
+    text-decoration: none;
+}
 
 .header-content {
     display: flex;

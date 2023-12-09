@@ -6,6 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CarrinhoService {
+  
   private carrinhoItemsSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
   carrinhoItems$: Observable<any[]> = this.carrinhoItemsSubject.asObservable();
 
