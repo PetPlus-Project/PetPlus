@@ -21,61 +21,45 @@ import { CarrinhoService } from '../../services/carrinho.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent{
   carrinhoItens: any[] = [];
   total: number = 0;
+  carrinhoAberto: boolean = false;
 
-  constructor(private carrinhoService: CarrinhoService) {}
-  
-  ngOnInit() {
-    // Inscreva-se no Observable para receber atualizações do carrinho
+  constructor(private carrinhoService: CarrinhoService) {
     this.carrinhoService.carrinhoItems$.subscribe(items => {
       this.carrinhoItens = items;
-      // this.atualizarTotal();
+      this.atualizarTotal();
     });
   }
 
   adicionarAoCarrinho() {
     const produto = {
       nome: 'Ração Premiatta',
-      preco: 'R$ 263,99',
+      preco: 263.99,
       parcelas: 'ou 3x de R$ 88,00'
       // Adicione mais detalhes do produto, se necessário
     };
     this.carrinhoService.adicionarAoCarrinho(produto);
-    // this.atualizarTotal();
+    this.abrirCarrinho(); // Abre o carrinho ao adicionar um item
   }
+
   finalizarCompra() {
     // Lógica para finalizar a compra
   }
-  private atualizarTotal() {
-    // this.total = this.carrinhoItens.reduce((acc, item) => acc + item.preco, 0);
+
+  toggleCarrinho() {
+    this.carrinhoAberto = !this.carrinhoAberto;
   }
-  // ImageCard1: string;
-  // ImageMarca1: string;
-  // ImageMarca2: string;
-  // ImageMarca3: string;
-  // ImageMarca4: string;
-  // ImageMarca5: string;
-  // ImageMarca6: string;
-  // ImageMarca7: string;
 
-  // ImageCarrossel1: string;
-  // ImageCarrossel2: string;
-  // ImageCarrossel3: string;
+  private abrirCarrinho() {
+    this.carrinhoAberto = true;
+  }
 
-  // constructor() {
-     //image location
-    //  this.ImageCard1 = '/components/imgs/imgCards/card1.png'
-    //  this.ImageMarca1 = '/assets/img/imgMarcas/marca1.jpg'
-    //  this.ImageMarca2 = '/assets/img/imgMarcas/marca2.jpg'
-    //  this.ImageMarca3 = '/assets/img/imgMarcas/marca3.jpg'
-    //  this.ImageMarca4 = '/assets/img/imgMarcas/marca4.jpg'
-    //  this.ImageMarca5 = '/assets/img/imgMarcas/marca5.jpg'
-    //  this.ImageMarca6 = '/assets/img/imgMarcas/marca6.jpg'
-    //  this.ImageMarca7 = '/assets/img/imgMarcas/marca7.jpg'
-    //  this.ImageCarrossel1 = '/assets/img/imgCarrossel/image1.jpg'
-    //  this.ImageCarrossel2 = '/assets/img/imgCarrossel/image2.gif'
-    //  this.ImageCarrossel3 = '/assets/img/imgCarrossel/image3.jpg'
-  // }
+  private atualizarTotal() {
+    this.total = this.carrinhoItens.reduce((acc, item) => acc + item.preco, 0);
+  }
+  removerDoCarrinho(index: number) {
+    this.carrinhoService.removerDoCarrinho(index);
+  }
 }

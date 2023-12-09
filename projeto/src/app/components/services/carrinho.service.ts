@@ -1,20 +1,23 @@
 // carrinho.service.ts
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarrinhoService {
-  private carrinhoItems = new BehaviorSubject<any[]>([]);
-  carrinhoItems$ = this.carrinhoItems.asObservable();
+  private carrinhoItemsSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
+  carrinhoItems$: Observable<any[]> = this.carrinhoItemsSubject.asObservable();
 
-  adicionarAoCarrinho(produto: any) {
-    const itensAtuais = this.carrinhoItems.value;
-    this.carrinhoItems.next([...itensAtuais, produto]);
+  adicionarAoCarrinho(item: any) {
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    const novoCarrinho = [...carrinhoAtual, item];
+    this.carrinhoItemsSubject.next(novoCarrinho);
   }
 
-  limparCarrinho() {
-    this.carrinhoItems.next([]);
+  removerDoCarrinho(index: number) {
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    const novoCarrinho = carrinhoAtual.filter((item, i) => i !== index);
+    this.carrinhoItemsSubject.next(novoCarrinho);
   }
 }

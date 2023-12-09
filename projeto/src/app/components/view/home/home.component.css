@@ -151,6 +151,9 @@ margin-top: 5%;
 }
 /* Adicione isso ao seu arquivo CSS global ou no estilo específico do componente */
 .carrinho-flutuante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     top: 40px; /* Ajuste conforme necessário para a posição vertical desejada */
     right: 1px; /* Ajuste conforme necessário para a posição horizontal desejada */
@@ -171,26 +174,57 @@ margin-top: 5%;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-.carrinho-flutuante .produto-carrinho{
-    color: white;
+.container-carrinho{
+    margin-top: 10%;
+    width: 100%;
+    border: 1px dashed rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .item-carrinho{
+    margin: 10px;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    
 }
-.carrinho-flutuante button{
+.item-carrinho .remover-item{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    background: rgb(255, 57, 57);
+    border: none;
+    transition: background 0.5s, color 0.5s;
+    border-radius: 60px;
+    text-shadow: 3px 2px 0px rgba(214, 81, 81, 0.432);
+    font-weight: 400; 
+}
+.carrinho-flutuante .btnCompra{
     font-family: 'Poppins', sans-serif;
     margin-top: 10%;
     background: rgb(85, 208, 238);
     border: none;
     transition: background 0.5s, color 0.5s;
     border-radius: 60px;
-    text-shadow: 3px 2px 0px rgba(241, 238, 238, 0.432); 
+    text-shadow: 3px 2px 0px rgba(241, 238, 238, 0.432);
+    font-weight: 600; 
 }
 .carrinho-flutuante button:hover{
     background: rgb(68, 162, 185);
 }
-.carrinho-flutuante button span{
-   font-weight: 600;
+.item-carrinho button:hover{
+    background: rgb(173, 50, 50);
 }
+.carrinho-flutuante span{
+    margin-top: 5%;
+    font-family: 'Arial', sans-serif;
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+}
+.carrinho-flutuante button a{
+    text-decoration: none;
+}
+
 /* Media Query para telas pequenas (largura até 576px) */
 @media screen and (max-width: 576px) {
     .banner {

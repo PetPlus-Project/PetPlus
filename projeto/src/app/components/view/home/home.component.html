@@ -122,6 +122,7 @@
                                         </div>
 
 
+
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
@@ -279,21 +280,27 @@
             </div>
         </div>
     </section>
-    <!-- <div class="carrinho-flutuante" *ngIf="carrinhoItens.length > 0">
-        <h2>Carrinho de Compras</h2>
-        <div *ngFor="let item of carrinhoItens">
-          {{ item.nome }} - {{ item.preco }}
-        </div>
-        <span>Total: R$ {{ total.toFixed(2) }}</span>
-        <button (click)="finalizarCompra()">Finalizar Compra</button>
-      </div> -->
-    <div class="carrinho-flutuante" *ngIf="carrinhoItens.length > 0">
+    <!-- <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
         <h2>Carrinho de Compras</h2>
         <div class="produto-carrinho" *ngFor="let item of carrinhoItens">
-            {{ item.nome }} - {{ item.preco }}
+          {{ item.nome }} - {{ item.preco }}
+          <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
         </div>
         <span>Total: R$ {{ total.toFixed(2) }}</span>
-        <button (click)="finalizarCompra()"><span>Finalizar Compra</span></button>
+        <button (click)="finalizarCompra()"><a href=""><span>Finalizar Compra</span></a></button>
+      </div> -->
+    <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
+        <h2>Carrinho de Compras</h2>
+        <div *ngFor="let item of carrinhoItens; let i = index">
+            <div class="container-carrinho">
+                <div class="item-carrinho">
+                    {{ item.nome }} - {{ item.preco }}
+                    <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
+                </div>
+            </div>
+        </div>
+        <span>Total: R$ {{ total.toFixed(2) }}</span>
+        <button class="btnCompra" (click)="finalizarCompra()">Finalizar Compra</button>
     </div>
     <hr>
     <section class="pt-5 pb-5">
