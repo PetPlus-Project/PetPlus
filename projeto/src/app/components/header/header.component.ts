@@ -9,9 +9,9 @@ import { CarrinhoService } from '../services/carrinho.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private carrinhoService: CarrinhoService) {}
+  constructor(public carrinhoService: CarrinhoService) {}
 
-  abrirCarrinho() {
-    this.carrinhoService.abrirCarrinho();
+  abrirFecharCarrinho() {
+    this.carrinhoService.toggleCarrinho();
   }
 }

@@ -26,15 +26,14 @@ export class HomeComponent {
   abrirCarrinho() {
     this.carrinhoService.toggleCarrinho();
   }
+  produto = {
+    nome: 'Ração Premiatta',
+    preco: 263.99,
+    parcelas: 'ou 3x de R$ 88,00',
+  };
 
   adicionarProdutoAoCarrinho() {
-    const produto = {
-      nome: 'Ração Premiatta',
-      preco: 263.99,
-      parcelas: 'ou 3x de R$ 88,00'
-    };
-    this.carrinhoService.adicionarProdutoAoCarrinho(produto);
-    this.carrinhoService.abrirCarrinho(); // Abre o carrinho após adicionar o produto
+    this.carrinhoService.adicionarProdutoAoCarrinho(this.produto);
   }
   fecharCarrinho() {
     this.carrinhoService.toggleCarrinho();

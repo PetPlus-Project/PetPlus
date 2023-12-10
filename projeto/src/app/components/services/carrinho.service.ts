@@ -21,11 +21,15 @@ export class CarrinhoService {
     this.carrinhoAbertoSubject.next(true);
   }
 
+  fecharCarrinho() {
+    this.carrinhoAbertoSubject.next(false);
+  }
+
   adicionarProdutoAoCarrinho(produto: any) {
     const carrinhoAtual = this.carrinhoItemsSubject.value;
     const novoCarrinho = [...carrinhoAtual, produto];
     this.carrinhoItemsSubject.next(novoCarrinho);
-    this.toggleCarrinho(); // Fecha o carrinho automaticamente
+    this.abrirCarrinho();  // Abre o carrinho ao adicionar um item
   }
 
   removerDoCarrinho(index: number) {
@@ -33,4 +37,10 @@ export class CarrinhoService {
     const novoCarrinho = carrinhoAtual.filter((item, i) => i !== index);
     this.carrinhoItemsSubject.next(novoCarrinho);
   }
+
+  calcularTotal(): number {
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    return carrinhoAtual.reduce((total, item) => total + item.preco, 0);
+  }
 }
+
