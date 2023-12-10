@@ -43,4 +43,3 @@ export class CarrinhoService {
     return carrinhoAtual.reduce((total, item) => total + item.preco, 0);
   }
 }
-
