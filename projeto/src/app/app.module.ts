@@ -9,6 +9,7 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { CarrinhoService } from './components/services/carrinho.service';
+import { PagamentoComponent } from './components/pagamento/pagamento.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CarrinhoService } from './components/services/carrinho.service';
     HomeComponent,
     CadastroComponent,
     LoginComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,
