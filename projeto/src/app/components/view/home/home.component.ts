@@ -13,7 +13,6 @@ export class HomeComponent {
   carrinhoAberto: boolean = false;
 
   produtos: any[] = [
-    // Adicione todos os produtos aqui
     // produtos recomendados
     { nome: 'Ração Premiatta', descricao: 'Cuide da saúde e bem-estar do seu fiel companheiro com a Ração Premiatta, uma escolha premium para nutrição completa e equilibrada', preco: 263.99, parcelas: 'ou 3x de R$ 88,00', imagem: 'assets/img/imgcards/racaopremiata.jpg' },
     { nome: 'Refeição Natural Zee.Dog Kitchen', descricao: 'Proporcione uma experiência culinária excepcional para o seu animal de estimação com a Refeição Natural, uma opção nutritiva e deliciosa que combina o sabor irresistível com benefícios para a saúde', preco: 32.99, parcelas: 'ou 2x de R$ 16,49', imagem: 'assets/img/imgcards/racao.jpg' },
@@ -44,6 +43,17 @@ export class HomeComponent {
     { nome: 'Bolinha Tapete', descricao: 'Explore o mundo do entretenimento animal com nossos Brinquedos para Gatos, uma coleção cuidadosamente selecionada para manter felino entretido e feliz.', preco: 111.99, parcelas: 'ou 2x de R$ 54,99', imagem: 'assets/img/imgcards/imgCardGato/brinquedogato2.jpg' },
     { nome: 'Macaco de Pelúcia', descricao: 'Explore o mundo do entretenimento animal com nossos Brinquedos para Gatos, desta vez um macaco de pelúcia com uma coleção cuidadosamente selecionada para manter seus amigo felino entretido e feliz.', preco: 31.99, parcelas: 'ou 3x de R$ 10,97', imagem: 'assets/img/imgcards/imgCardGato/macaco.jpg' },
     { nome: 'Bolinha Pontiaguda', descricao: 'Explore o mundo do entretenimento animal com nossos Brinquedos para Gatos, desta vez uma bolinha pontiaguda com uma coleção cuidadosamente selecionada para manter seus amigo felino entretido e feliz.', preco: 21.99, parcelas: 'ou 2x de R$ 10,97', imagem: 'assets/img/imgcards/imgCardGato/acessorio1.jpg' },
+    // produtos em promoção
+    { nome: 'Antipulgas Simparic', descricao: 'Mantenha seu animal protegido e saudável com o nosso Antipulgas, uma solução eficaz e confiável para o controle da pele do seu pet.', preco: 29.99, parcelas: 'ou 2x de R$ 14,49'},
+    { nome: 'Vermífugo Milbemax', descricao: 'Mantenha seu pet protegido e saudável com o Vermífugo Milbemax, uma solução eficaz e confiável para o controle de vermes intestinais.', preco: 31.99, parcelas: 'ou 2x de R$ 15,45'},
+    { nome: 'Desinfetante (1L)', descricao: 'Mantenha seu animal protegido e saudável com o nosso Desinfetante de 1 Litro, uma solução eficaz e confiável para o controle de pulgas ou insetos na pele do seu pet.', preco: 51.99, parcelas: 'ou 2x de R$ 25,49'},
+    { nome: 'Caixa de Transporte', descricao: 'Ofereça ao seu animal querido um transporte confortável para suas viagens com a nossa Caixa de Transporte, um refúgio aconchegante e seguro que atende às necessidades do seu querido pet.', preco: 350.99, parcelas: 'ou 4x de R$ 87,50'},
+    { nome: 'Coleira', descricao: 'Ofereça ao seu fiel companheiro uma confortável coleira com material ultrarresistente e macio de primeira linha, uma coleira eficaz e segura que atende às necessidades do seu animalzinho.', preco: 49.99, parcelas: 'ou 2x de R$ 25,50'},
+    { nome: 'Creme Hidrapet', descricao: 'Deixe o seu animal extremamente cheiroso e hidratado com o nosso Creme Hidrapet, um creme cheiroso e seguro que atende às necessidades do seu animalzinho.', preco: 59.99, parcelas: 'ou 2x de R$ 29,50'},
+    { nome: 'Condicionador Hidrapet', descricao: 'Deixe o seu animal extremamente cheiroso e hidratado com o nosso Condicionador Hidrapet, um condicionador cheiroso e duradouro que atende às necessidades do seu animalzinho.', preco: 69.99, parcelas: 'ou 2x de R$ 39,50'},
+    { nome: 'Crocodilo de Pelúcia', descricao: 'Explore o mundo do entretenimento animal com nossos brinquedos personalizados, desta vez com um Crocodilo de Pelúcia com uma coleção cuidadosamente selecionada para manter seus animais entretidos e felizes.', preco: 31.99, parcelas: 'ou 3x de R$ 10,97'},
+    { nome: 'Suplemento Avert', descricao: 'Cuide da saúde e bem-estar do seu fiel companheiro com o Suplemento Avert, uma escolha premium para nutrição completa e equilibrada', preco: 289.99, parcelas: 'ou 3x de R$ 103,98'},
+
   ];
 
   constructor(private carrinhoService: CarrinhoService) {
