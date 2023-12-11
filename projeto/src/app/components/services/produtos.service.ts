@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -16,19 +16,16 @@ export class ProdutosService {
     { name: 'Brinquedo para Gato', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo2.png' },
   ];
 
-  public filteredProductsSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
-  filteredProducts$: Observable<any[]> = this.filteredProductsSubject.asObservable();
-
-  constructor() {
-    this.filterProducts('all'); // Inicializa os produtos filtrados com todos ao criar o serviço
+  getAllProducts(): Observable<any[]> {
+    return of(this.products);
   }
 
-  filterProducts(category: string): void {
+  getFilteredProducts(category: string): Observable<any[]> {
     if (category.toLowerCase() === 'all') {
-      this.filteredProductsSubject.next(this.products);
+      return of(this.products);
     } else {
       const filteredProducts = this.products.filter((product) => product.category.toLowerCase() === category.toLowerCase());
-      this.filteredProductsSubject.next(filteredProducts);
+      return of(filteredProducts);
     }
   }
 }

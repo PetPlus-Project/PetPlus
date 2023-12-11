@@ -8,20 +8,31 @@ import { ProdutosService } from '../services/produtos.service';
 })
 export class ProdutosComponent implements OnInit {
   activeCategory: string = 'all';
+  originalProducts: any[] = [];
   products: any[] = [];
 
-  constructor(private productService: ProdutosService) {}
+  constructor(public productService: ProdutosService) {}
 
   ngOnInit(): void {
-    this.productService.filteredProducts$.subscribe((filteredProducts) => {
-      this.products = filteredProducts;
+    this.loadProducts();
+  }
+
+  loadProducts(): void {
+    this.productService.getAllProducts().subscribe((allProducts) => {
+      this.originalProducts = allProducts;
+      this.filterProducts('all'); // Filtrar produtos ao carregar a página
     });
   }
 
   filterProducts(category: string): void {
     this.activeCategory = category;
-    this.productService.filterProducts(category);
+    if (category.toLowerCase() === 'all') {
+      this.products = [...this.originalProducts];
+    } else {
+      this.products = this.originalProducts.filter((product) => product.category.toLowerCase() === category.toLowerCase());
+    }
   }
+
   trackByFn(index: number, item: any): string {
     return item.name; // Substitua 'name' pela propriedade única do produto
   }

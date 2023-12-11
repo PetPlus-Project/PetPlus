@@ -48,6 +48,9 @@ body{
     cursor: pointer;
     border: none;
 }
+.product-item.hidden {
+    display: none;
+}
 
 .products-list{
     width: 82%;

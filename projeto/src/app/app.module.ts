@@ -12,7 +12,6 @@ import { ProdutosService } from './components/services/produtos.service';
 import { CarrinhoService } from './components/services/carrinho.service';
 import { PagamentoComponent } from './components/pagamento/pagamento.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +21,7 @@ import { PagamentoComponent } from './components/pagamento/pagamento.component';
     CadastroComponent,
     LoginComponent,
     ProdutosComponent,
-    PagamentoComponent
+    PagamentoComponent,
   ],
   imports: [
     BrowserModule,
