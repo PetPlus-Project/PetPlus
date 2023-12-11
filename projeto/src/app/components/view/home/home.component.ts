@@ -54,15 +54,15 @@ export class HomeComponent {
     { nome: 'Crocodilo de Pelúcia', descricao: 'Explore o mundo do entretenimento animal com nossos brinquedos personalizados, desta vez com um Crocodilo de Pelúcia com uma coleção cuidadosamente selecionada para manter seus animais entretidos e felizes.', preco: 31.99, parcelas: 'ou 3x de R$ 10,97'},
     { nome: 'Suplemento Avert', descricao: 'Cuide da saúde e bem-estar do seu fiel companheiro com o Suplemento Avert, uma escolha premium para nutrição completa e equilibrada', preco: 289.99, parcelas: 'ou 3x de R$ 103,98'},
     // animais com deficiência
-    { nome: 'Andador para Animais', descricao: '', preco: 119.99, parcelas: 'ou 2x de R$ 59,99'},
-    { nome: 'Cadeira de Rodas - Patas Traseiras', descricao: '', preco: 199.99, parcelas: 'ou 3x de R$ 63,99'},
-    { nome: 'Bandagens para Patas Danificadas', descricao: '', preco: 87.99, parcelas: 'ou 2x de R$ 43,99'},
-    { nome: 'Cama Ortopédica', descricao: '', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
-    { nome: 'Protetor de Membros', descricao: '', preco: 143.99, parcelas: 'ou 2x de R$ 71,99'},
-    { nome: 'Escada para Auxílio', descricao: '', preco: 54.99, parcelas: 'ou 2x de R$ 27,99'},
-    { nome: 'Tala para Patas', descricao: '', preco: 41.99, parcelas: 'ou 2x de R$ 20,99'},
-    { nome: 'Cadeira de Rodas', descricao: '', preco: 199.99, parcelas: 'ou 3x de R$ 63,66'},
-    { nome: 'Cama Ortopédica Meau', descricao: '', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
+    { nome: 'Andador para Animais', descricao: 'Dê ao seu melhor amigo de quatro patas a liberdade de se movimentar com o Andador "PawsUp". Leve, ajustável e fácil de usar, este andador proporciona conforto e estabilidade para animais com deficiências nas patas traseiras. Deixe seu pet explorar o mundo com alegria renovada!', preco: 119.99, parcelas: 'ou 2x de R$ 59,99'},
+    { nome: 'Cadeira de Rodas - Patas Traseiras', descricao: 'Cadeira de Rodas para Animais "RollPaws". Esta cadeira inovadora é projetada para animais com deficiências nas patas traseiras, oferecendo conforto, ajustabilidade e a liberdade para explorar o mundo com alegria renovada.', preco: 199.99, parcelas: 'ou 3x de R$ 63,99'},
+    { nome: 'Bandagens para Patas Danificadas', descricao: 'Auxilie na recuperação do seu pet com as Bandagens "HealPaws". Projetadas para patas danificadas, oferecem suporte e conforto durante o processo de cura. Leves e ajustáveis, permitem que seu animal se mova com facilidade.', preco: 87.99, parcelas: 'ou 2x de R$ 43,99'},
+    { nome: 'Cama Ortopédica', descricao: 'Proporcione o descanso ideal para seu pet com a Cama Ortopédica "OrthoPaws". Projetada para oferecer suporte a animais com necessidades ortopédicas, esta cama proporciona conforto excepcional e alívio da pressão.', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
+    { nome: 'Protetor de Membros', descricao: 'Mantenha as patas do seu pet seguras e protegidas com o Protetor de Membros "SafePaws". Desenvolvido para proporcionar conforto e evitar lesões, este protetor é ideal para animais com patas sensíveis ou em processo de recuperação.', preco: 143.99, parcelas: 'ou 2x de R$ 71,99'},
+    { nome: 'Escada para Auxílio', descricao: 'Facilite o acesso a lugares elevados para o seu pet com a Escada com Auxílio "StepUpPaws". Projetada para animais de estimação com mobilidade reduzida, esta escada oferece uma solução prática e segura.', preco: 54.99, parcelas: 'ou 2x de R$ 27,99'},
+    { nome: 'Tala para Patas', descricao: 'Proporcione suporte e estabilidade às patas do seu pet com a Tala "FlexPaws". Desenvolvida para auxiliar na recuperação de lesões ou no tratamento de condições ortopédicas, esta tala oferece conforto e proteção durante o processo de cura.', preco: 41.99, parcelas: 'ou 2x de R$ 20,99'},
+    { nome: 'Cadeira de Rodas', descricao: 'Cadeira de Rodas para Animais "RollPaws". Esta cadeira inovadora é projetada para animais com deficiências nas patas traseiras, oferecendo conforto, ajustabilidade e a liberdade para explorar o mundo com alegria renovada.', preco: 199.99, parcelas: 'ou 3x de R$ 63,66'},
+    { nome: 'Cama Ortopédica Meau', descricao: 'Proporcione o descanso ideal para seu pet com a Cama Ortopédica "Meau". Projetada para oferecer suporte a animais com necessidades ortopédicas, esta cama proporciona conforto excepcional e alívio da pressão.', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
   ];
 
   constructor(private carrinhoService: CarrinhoService) {

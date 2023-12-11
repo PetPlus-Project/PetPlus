@@ -800,53 +800,41 @@
                             <div class="carousel-item">
                                 <div class="row">
 
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:39:40; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/racaogato.png" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/camaortopedica.jpg" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Ração Mandaí cat</h4>
-                                                <p class="card-text">Proporcione ao seu felino uma experiência
-                                                    gastronômica excepcional com a Ração Mandaí Cat, uma fórmula
-                                                    cuidadosamente elaborada para atender às necessidades nutricionais
-                                                    específicas dos gatos. </p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 44,90</h4>
-                                                    <p>ou 2x de R$ 22,45</p>
-                                                </button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/remediogato.jpg" alt="">
-                                            <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Vermífugo Drontal Gatos </h4>
-                                                <p class="card-text">Mantenha seu felino protegido e saudável com o
-                                                    Vermífugo Drontal para Gatos, uma solução eficaz e confiável para o
-                                                    controle de vermes intestinais.</p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 54,90</h4>
-                                                    <p>ou 2x de R$ 27,45</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:40:41; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/brinquedo.png" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/protetormembros.jpg" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Brinquedo para Gatos e Cachorros</h4>
-                                                <p class="card-text">Explore o mundo do entretenimento animal com nossos
-                                                    Brinquedos para Cachorros e Gatos, uma coleção cuidadosamente
-                                                    selecionada para manter seus amigos peludos entretidos e felizes.
-                                                </p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 32,00</h4>
-                                                    <p>ou 2x de R$ 16,00</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:41:42; let i = index">
+                                        <div class="card">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/escada.webp" alt="">
+                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
                                             </div>
                                         </div>
@@ -857,53 +845,41 @@
                             <div class="carousel-item">
                                 <div class="row">
 
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:42:43; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/casagato.jpg" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/tala.webp" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Casa para Gato </h4>
-                                                <p class="card-text">Proporcione ao seu felino um refúgio acolhedor e
-                                                    encantador com a Casinha para Gatos, o lugar perfeito para descanso
-                                                    e relaxamento.</p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 485,00</h4>
-                                                    <p>ou 4x de R$ 121,25</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/casacachorro.jpg" alt="">
-                                            <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Casa Cachorro</h4>
-                                                <p class="card-text">Ofereça ao seu fiel companheiro um lar dentro do
-                                                    lar com a Casinha para Cachorros, um refúgio aconchegante e seguro
-                                                    que atende às necessidades do seu amigo peludo.</p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 350,00</h4>
-                                                    <p>ou 4x de R$ 87,50</p>
-                                                </button>
-
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:43:44; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/petiscos.jpg" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/cadeira3.webp" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Petiscos para seu animal</h4>
-                                                <p class="card-text">Delicie seus amigos peludos com nossos
-                                                    irresistíveis Petiscos para Gatos e Cachorros, uma seleção de
-                                                    agrados saborosos e saudáveis que farão a alegria dos seus animais
-                                                    de estimação. </p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 12,50</h4>
-                                                    <p>ou 2x de R$ 6,25</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:44:45; let i = index">
+                                        <div class="card">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/camameau.webp" alt="">
+                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
                                             </div>
                                         </div>
