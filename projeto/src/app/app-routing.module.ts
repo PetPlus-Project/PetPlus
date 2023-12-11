@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { PagamentoComponent } from './components/pagamento/pagamento.component';
 
+
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'cadastro', component: CadastroComponent},
