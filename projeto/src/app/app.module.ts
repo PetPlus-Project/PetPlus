@@ -8,6 +8,7 @@ import { HomeComponent } from './components/view/home/home.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ProdutosService } from './components/services/produtos.service';
 import { CarrinhoService } from './components/services/carrinho.service';
 import { PagamentoComponent } from './components/pagamento/pagamento.component';
 
@@ -27,7 +28,7 @@ import { PagamentoComponent } from './components/pagamento/pagamento.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CarrinhoService],
+  providers: [CarrinhoService, ProdutosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

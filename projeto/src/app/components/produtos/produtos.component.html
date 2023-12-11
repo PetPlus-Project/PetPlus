@@ -16,27 +16,27 @@
         <h1>Página de Produtos</h1>
         <div class="store-wrapper">
             <div class="category_list">
-                <a href="" class="category_item" category="all">Todos</a>
-                <a href="" class="category_item" category="racao">Ração</a>
-                <a href="" class="category_item" category="brinquedos">Brinquedos</a>
-                <a href="" class="category_item" category="brindes">Brindes</a>
+                <button class="category_item" (click)="filterProducts('all')" [class.ct_item-active]="activeCategory === 'all'">Todos</button>
+                <button class="category_item" (click)="filterProducts('racao')" [class.ct_item-active]="activeCategory === 'racao'">Ração</button>
+                <button class="category_item" (click)="filterProducts('brinquedos')" [class.ct_item-active]="activeCategory === 'brinquedos'">Brinquedos</button>
+                <button class="category_item" (click)="filterProducts('brindes')" [class.ct_item-active]="activeCategory === 'brindes'">Brindes</button>
             </div>
             <section class="products-list">
-                <div class="product-item" category="racao">
-                    <img src="assets/img/imgProdutos/imgRacao/racao1.webp" alt="">
-                    <a href="#">Ração Golden</a>
+                <div *ngFor="let product of products; trackBy: trackByFn;" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
-                <div class="product-item" category="racao">
-                    <img src="assets/img/imgProdutos/imgRacao/racao2.png" alt="">
-                    <a href="#">Ração Smash</a>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
-                <div class="product-item" category="racao">
-                    <img src="assets/img/imgProdutos/imgRacao/racao3.webp" alt="">
-                    <a href="#">Ração Premium</a>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
-                <div class="product-item" category="racao">
-                    <img src="assets/img/imgProdutos/imgRacao/racao4.webp" alt="">
-                    <a href="#">Ração Pobre</a>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
                 <div class="product-item" category="brindes">
                     <img src="assets/img/imgProdutos/imgBrindes/brinde1.webp" alt="">

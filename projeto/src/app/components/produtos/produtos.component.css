@@ -45,6 +45,8 @@ body{
     text-align: center;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+    border: none;
 }
 
 .products-list{
@@ -72,6 +74,9 @@ body{
     width: 200px;
     height: 250px;
 }
+/* .hide{
+    display: none;
+} */
 .products-list .product-item a{
     display: block;
     width: 100%;
