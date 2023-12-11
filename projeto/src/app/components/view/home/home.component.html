@@ -755,53 +755,41 @@
                             <div class="carousel-item active">
                                 <div class="row">
 
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:36:37; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 50%; height: auto;"
-                                                src="assets/img/imgcards/racaopremiata.jpg" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/andador.webp" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Ração Premiatta</h4>
-                                                <p class="card-text">Cuide da saúde e bem-estar do seu fiel companheiro
-                                                    com a Ração Premiatta, uma escolha premium para nutrição completa e
-                                                    equilibrada.</p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 263,99</h4>
-                                                    <p>ou 3x de R$ 88,00</p>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/racao.jpg" alt="">
-                                            <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Refeição Natural Zee.Dog Kitchen </h4>
-                                                <p class="card-text">Proporcione uma experiência culinária excepcional
-                                                    para o seu animal de estimação com a Refeição Natural, uma opção
-                                                    nutritiva e deliciosa que combina o sabor irresistível com
-                                                    benefícios para a saúde</p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 32,99</h4>
-                                                    <p>ou 2x de R$ 16,49</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:37:38; let i = index">
                                         <div class="card">
-                                            <img class="img-fluid" style="max-width: 60%; height: auto;"
-                                                src="assets/img/imgcards/perfume.jpg" alt="">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/cadeira2.webp" alt="">
                                             <div class="card-body d-flex flex-column justify-content-between">
-                                                <h4 class="card-title">Perfume Pet Clean</h4>
-                                                <p class="card-text">Transforme o cuidado do seu pet em uma experiência
-                                                    luxuosa com o Perfume Pet Clean, uma fragrância especialmente
-                                                    formulada para envolver seu animal de estimação em uma aura de
-                                                    frescor e limpeza. </p>
-                                                <button class="price-cards">
-                                                    <h4>R$ 19,99</h4>
-                                                    <p>ou 2x de R$ 10,00</p>
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3" *ngFor="let produto of produtos | slice:38:39; let i = index">
+                                        <div class="card">
+                                            <img class="img-fluid" style="max-width: 50%; height: auto;" img src="assets/img/imgcards/imgDeficiencias/bandagem.jpg" alt="">
+                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                <h4 class="card-title">{{ produto.nome }}</h4>
+                                                <p class="card-text">{{ produto.descricao }}</p>
+                                                <button class="price-cards" (click)="adicionarProdutoAoCarrinho(produto)">
+                                                    <h4>R$ {{ produto.preco }}</h4>
+                                                    <p>{{ produto.parcelas }}</p>
                                                 </button>
                                             </div>
                                         </div>

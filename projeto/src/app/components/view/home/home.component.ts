@@ -53,7 +53,16 @@ export class HomeComponent {
     { nome: 'Condicionador Hidrapet', descricao: 'Deixe o seu animal extremamente cheiroso e hidratado com o nosso Condicionador Hidrapet, um condicionador cheiroso e duradouro que atende às necessidades do seu animalzinho.', preco: 69.99, parcelas: 'ou 2x de R$ 39,50'},
     { nome: 'Crocodilo de Pelúcia', descricao: 'Explore o mundo do entretenimento animal com nossos brinquedos personalizados, desta vez com um Crocodilo de Pelúcia com uma coleção cuidadosamente selecionada para manter seus animais entretidos e felizes.', preco: 31.99, parcelas: 'ou 3x de R$ 10,97'},
     { nome: 'Suplemento Avert', descricao: 'Cuide da saúde e bem-estar do seu fiel companheiro com o Suplemento Avert, uma escolha premium para nutrição completa e equilibrada', preco: 289.99, parcelas: 'ou 3x de R$ 103,98'},
-
+    // animais com deficiência
+    { nome: 'Andador para Animais', descricao: '', preco: 119.99, parcelas: 'ou 2x de R$ 59,99'},
+    { nome: 'Cadeira de Rodas - Patas Traseiras', descricao: '', preco: 199.99, parcelas: 'ou 3x de R$ 63,99'},
+    { nome: 'Bandagens para Patas Danificadas', descricao: '', preco: 87.99, parcelas: 'ou 2x de R$ 43,99'},
+    { nome: 'Cama Ortopédica', descricao: '', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
+    { nome: 'Protetor de Membros', descricao: '', preco: 143.99, parcelas: 'ou 2x de R$ 71,99'},
+    { nome: 'Escada para Auxílio', descricao: '', preco: 54.99, parcelas: 'ou 2x de R$ 27,99'},
+    { nome: 'Tala para Patas', descricao: '', preco: 41.99, parcelas: 'ou 2x de R$ 20,99'},
+    { nome: 'Cadeira de Rodas', descricao: '', preco: 199.99, parcelas: 'ou 3x de R$ 63,66'},
+    { nome: 'Cama Ortopédica Meau', descricao: '', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'},
   ];
 
   constructor(private carrinhoService: CarrinhoService) {
