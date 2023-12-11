@@ -13,21 +13,14 @@ export class ProdutosComponent implements OnInit {
   constructor(private productService: ProdutosService) {}
 
   ngOnInit(): void {
-    this.products = this.productService.products;
     this.productService.filteredProducts$.subscribe((filteredProducts) => {
       this.products = filteredProducts;
     });
-    this.filterProducts('all');
   }
 
   filterProducts(category: string): void {
     this.activeCategory = category;
-    if (category.toLowerCase() === 'all') {
-      this.productService.filteredProductsSubject.next(this.productService.products);
-    } else {
-      const filteredProducts = this.productService.products.filter((product) => product.category.toLowerCase() === category.toLowerCase());
-      this.productService.filteredProductsSubject.next(filteredProducts);
-    }
+    this.productService.filterProducts(category);
   }
   trackByFn(index: number, item: any): string {
     return item.name; // Substitua 'name' pela propriedade única do produto

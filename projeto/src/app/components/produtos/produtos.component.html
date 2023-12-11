@@ -22,7 +22,15 @@
                 <button class="category_item" (click)="filterProducts('brindes')" [class.ct_item-active]="activeCategory === 'brindes'">Brindes</button>
             </div>
             <section class="products-list">
-                <div *ngFor="let product of products; trackBy: trackByFn;" class="product-item">
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
+                </div>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
+                </div>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
                     <img [src]="product.image" alt="">
                     <a href="#">{{ product.name }}</a>
                 </div>
@@ -38,21 +46,13 @@
                     <img [src]="product.image" alt="">
                     <a href="#">{{ product.name }}</a>
                 </div>
-                <div class="product-item" category="brindes">
-                    <img src="assets/img/imgProdutos/imgBrindes/brinde1.webp" alt="">
-                    <a href="#">Brinde Pet</a>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
-                <div class="product-item" category="brindes">
-                    <img src="assets/img/imgProdutos/imgBrindes/brinde2.webp" alt="">
-                    <a href="#">Brinde Gato</a>
-                </div>
-                <div class="product-item" category="brinquedos">
-                    <img src="assets/img/imgProdutos/imgBrinquedos/brinquedo1.png" alt="">
-                    <a href="#">Brinquedo para Cachorro</a>
-                </div>
-                <div class="product-item" category="brinquedos">
-                    <img src="assets/img/imgProdutos/imgBrinquedos/brinquedo2.png" alt="">
-                    <a href="#">Brinquedo para Gato</a>
+                <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
+                    <img [src]="product.image" alt="">
+                    <a href="#">{{ product.name }}</a>
                 </div>
                 <!-- <div class="product-item" category="brinquedos">
                     <img src="images/brinquedo3.png" alt="">
