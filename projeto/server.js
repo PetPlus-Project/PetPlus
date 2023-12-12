@@ -41,22 +41,27 @@ app.post('/signup', async (req, res) => {
 });
 app.post('/login', async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { login, password } = req.body;
 
-    // Realize a verificação de autenticação aqui, compare a senha com o hash no banco de dados, etc.
+    // Realize a verificação de autenticação aqui, comparando login e senha com o banco de dados
+    const result = await pool.query('SELECT * FROM usuarios WHERE (email = $1 OR username = $1) AND password = $2', [login, password]);
 
-    // Se a autenticação for bem-sucedida, você pode gerar um token JWT e enviá-lo de volta para o cliente
+    if (result.rows.length > 0) {
+      // Se houver uma correspondência, você pode gerar um token JWT e enviá-lo de volta para o cliente
 
-    // Exemplo simples de geração de token:
-    const token = jwt.sign({ email }, 'your-secret-key');
+      // Exemplo simples de geração de token:
+      const token = jwt.sign({ login }, 'your-secret-key');
 
-    res.status(200).json({ token });
+      res.status(200).json({ token });
+    } else {
+      // Se não houver correspondência, envie uma mensagem de erro
+      res.status(401).json({ message: 'Credenciais inválidas' });
+    }
   } catch (error) {
     console.error(error);
     res.status(500).send('Erro interno do servidor ao tentar fazer login');
   }
 });
-
 const port = 3000;
 app.listen(port, () => {
   console.log(`Servidor está ouvindo na porta ${port}`);

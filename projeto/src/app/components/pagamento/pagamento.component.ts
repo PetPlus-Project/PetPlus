@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagamento.component.css']
 })
 export class PagamentoComponent {
+  dadosCartao = {
+    numero: '',
+    nome: '',
+    validade: '',
+    codigoSeguranca: ''
+  };
 
+  processarPagamento() {
+    // Aqui você pode implementar a lógica de processamento do pagamento
+    console.log('Processando pagamento:', this.dadosCartao);
+  }
 }

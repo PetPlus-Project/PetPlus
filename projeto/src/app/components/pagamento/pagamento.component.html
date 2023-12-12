@@ -1,1 +1,24 @@
-<h1>Área de Pagamento</h1>
+<div>
+  <h2>Página de Pagamento</h2>
+  <form class="tabela" (submit)="processarPagamento()">
+    <div class="cartao">
+      <br><br>
+      <div class="linhalabel">
+      <label>Número do Cartão:</label>
+      <label>Nome no Cartão:</label>
+    </div>
+      <div class="linhaum">
+        <input type="text" [(ngModel)]="dadosCartao.numero" placeholder="1234 5678 9012 3456" required>
+        <input type="text" [(ngModel)]="dadosCartao.nome" placeholder="Nome Completo" required>
+      </div>
+      <br>
+      <div class="linhadois">
+        <label>Data de Validade:</label>
+        <input type="text" [(ngModel)]="dadosCartao.validade" placeholder="MM/AA" required>
+        <label>Código de Segurança:</label>
+        <input type="text" [(ngModel)]="dadosCartao.codigoSeguranca" placeholder="CVC" required>
+      </div>
+    </div>
+    <button type="submit">Confirmar Pagamento</button>
+  </form>
+</div>
