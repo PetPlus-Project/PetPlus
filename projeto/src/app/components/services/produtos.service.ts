@@ -24,8 +24,16 @@ export class ProdutosService {
     { name: 'Ração Premier', category: 'racao', image: 'assets/img/imgcards/imgCardGato/racaogato1.jpg', preco: 199.99 },
     { name: 'Brinde Pet', category: 'brindes', image: 'assets/img/imgProdutos/imgBrindes/brinde1.webp', preco: 199.99 },
     { name: 'Brinde Gato', category: 'brindes', image: 'assets/img/imgProdutos/imgBrindes/brinde2.webp', preco: 199.99 },
-    { name: 'Brinquedo para Cachorro', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo1.png', preco: 199.99 },
-    { name: 'Brinquedo para Gato', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo2.png', preco: 199.99 },
+    { name: 'Bola para Brincar', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo1.png', preco: 199.99 },
+    { name: 'Osso de Pelúcia', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo2.png', preco: 199.99 },
+    { name: 'Osso de Pelúcia', category: 'brinquedos', image: 'assets/img/imgProdutos/imgBrinquedos/brinquedo2.png', preco: 199.99 },
+    { name: 'Alien', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Bicho Preguiça', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Bolinha Crocante', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Capivara', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Louro', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Macaco', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaopremierumida.jpg', preco: 199.99 },
+    { name: 'Porco', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racaogolden.jpg', preco: 199.99 },
   ];
 
   getAllProducts(): Observable<any[]> {
