@@ -53,7 +53,7 @@ body{
     background: #3ec0e8;
     text-align: center;
     text-decoration: none;
-    color: #000000;
+   color: white;
     cursor: pointer;
     border: none;
     letter-spacing: 1px;
@@ -113,7 +113,7 @@ body{
 .products-list .product-item button{
     text-align: center;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+   color: white;
     background: rgb(85, 208, 238);
     border: none;
     transition: background 0.5s, color 0.5s;
