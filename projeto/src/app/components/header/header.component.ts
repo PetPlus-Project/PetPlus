@@ -9,9 +9,21 @@ import { CarrinhoService } from '../services/carrinho.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(public carrinhoService: CarrinhoService) {}
+  constructor(public carrinhoService: CarrinhoService) { }
 
   abrirFecharCarrinho() {
     this.carrinhoService.toggleCarrinho();
   }
+
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon: HTMLElement | null = document.getElementById('menu-icon');
+  const navbar: HTMLElement | null = document.querySelector('.navbar');
+
+  if (menuIcon && navbar) {
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('open');
+    });
+  }
+});
+

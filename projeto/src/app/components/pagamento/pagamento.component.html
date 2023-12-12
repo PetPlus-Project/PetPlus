@@ -1,24 +1,45 @@
-<div>
-  <h2>Página de Pagamento</h2>
-  <form class="tabela" (submit)="processarPagamento()">
-    <div class="cartao">
-      <br><br>
-      <div class="linhalabel">
-      <label>Número do Cartão:</label>
-      <label>Nome no Cartão:</label>
-    </div>
-      <div class="linhaum">
-        <input type="text" [(ngModel)]="dadosCartao.numero" placeholder="1234 5678 9012 3456" required>
-        <input type="text" [(ngModel)]="dadosCartao.nome" placeholder="Nome Completo" required>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagamento.component.css">
+  <title>Pagamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+</head>
+
+
+<body>
+
+
+  <div>
+    <h2>Página de Pagamento</h2>
+    <form class="tabela" (submit)="processarPagamento()">
+      
+      <div class="cartao">
+        <h3>Seus dados do cartão de crédito</h3>
+        <br>
+        <div class="linhalabel">
+          <label>Nome no Cartão:</label>
+          <input class="input-grande" type="text" [(ngModel)]="dadosCartao.nome" placeholder="Nome Completo" required>
+          <label class="numcart">Número do Cartão:</label>
+          <input class="input-grande" type="text" [(ngModel)]="dadosCartao.numero" placeholder="1234 5678 9012 3456"
+            required>
+        </div>
+        <br>
+        <div class="linhadois">
+          <label class="data">Data de Validade:</label>
+          <input class="input-pequena" type="text" [(ngModel)]="dadosCartao.validade" placeholder="MM/AA" required>
+          <label class="codg">Código de Segurança:</label>
+          <input class="input-pequena" type="text" [(ngModel)]="dadosCartao.codigoSeguranca" placeholder="CVC" required>
+        </div>
+        <button type="submit">Confirmar Pagamento</button>
       </div>
-      <br>
-      <div class="linhadois">
-        <label>Data de Validade:</label>
-        <input type="text" [(ngModel)]="dadosCartao.validade" placeholder="MM/AA" required>
-        <label>Código de Segurança:</label>
-        <input type="text" [(ngModel)]="dadosCartao.codigoSeguranca" placeholder="CVC" required>
-      </div>
-    </div>
-    <button type="submit">Confirmar Pagamento</button>
-  </form>
-</div>
+    </form>
+  </div>
+</body>

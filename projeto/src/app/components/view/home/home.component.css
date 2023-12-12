@@ -158,7 +158,7 @@ margin-top: 5%;
     position: fixed;
     top: 20px; /* Ajuste conforme necessário para a posição vertical desejada */
     right: 0; /* Ajuste conforme necessário para a posição horizontal desejada */
-    background: rgb(131, 123, 123);
+    background: rgb(189, 189, 189);
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(109, 105, 105, 0.1);
@@ -300,6 +300,62 @@ margin-top: 5%;
 
     .container-img {
         width: 70%;
+    }
+
+    .container-texto {
+        width: 50%;
+        margin-right: 200px;
+    }
+}
+
+/* Adicione essas regras de mídia no final do seu arquivo CSS */
+
+/* Media Query para telas pequenas (largura até 576px) */
+@media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column; /* Muda para empilhamento vertical */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .container-img {
+        display: none; /* Remove a imagem em telas menores */
+    }
+
+    .container-texto {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Media Query para telas médias (largura entre 577px e 992px) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .banner {
+        flex-direction: column; /* Muda para empilhamento vertical */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .container-img {
+        display: none; /* Remove a imagem em telas menores */
+    }
+
+    .container-texto {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Media Query para telas grandes (largura acima de 992px) */
+@media screen and (min-width: 993px) {
+    .banner {
+        flex-direction: row; /* Restaura o layout para linha */
+        justify-content: space-between; /* Distribui os itens horizontalmente */
+        align-items: center; /* Centraliza verticalmente os itens */
+    }
+
+    .container-img {
+        display: block; /* Exibe a imagem em telas maiores */
+        width: 70%;
+        margin-bottom: 0; /* Remove o espaço entre a imagem e o texto */
     }
 
     .container-texto {
