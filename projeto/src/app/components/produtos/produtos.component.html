@@ -21,7 +21,7 @@
                 <button class="category_item" (click)="filterProducts('all')" [class.ct_item-active]="activeCategory === 'all'">Todos</button>
                 <button class="category_item" (click)="filterProducts('racao')" [class.ct_item-active]="activeCategory === 'racao'">Comidas</button>
                 <button class="category_item" (click)="filterProducts('brinquedos')" [class.ct_item-active]="activeCategory === 'brinquedos'">Brinquedos</button>
-                <button class="category_item" (click)="filterProducts('brindes')" [class.ct_item-active]="activeCategory === 'brindes'">Brindes</button>
+                <button class="category_item" (click)="filterProducts('acessorios')" [class.ct_item-active]="activeCategory === 'acessorios'">Acessórios</button>
             </div>
             <section class="products-list">
                 <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
