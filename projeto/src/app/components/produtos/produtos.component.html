@@ -26,7 +26,7 @@
             <section class="products-list">
                 <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
                     <img [src]="product.image" alt="">
-                    <a href="#"><h1>{{ product.name }}</h1>
+                    <a href="#" (click)="adicionarProdutoAoCarrinho(product)"><h1>{{ product.name }}</h1>
                         <button>{{ product.preco }}</button>
                     </a>
                   </div>
