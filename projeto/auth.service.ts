@@ -1,7 +1,8 @@
 // auth.service.ts
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -11,11 +12,16 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  signup(username: string, email: string, cpf: string, dob: string, phone: string, password: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/signup`, { username, email, cpf, dob, phone, password }, { responseType: 'text' });
+  signup(username: string, email: string, cpf: string, dob: string, phone: string, password: string, confirmPassword: string): Observable<any> {
+    return this.http.post(`${this.apiUrl}/signup`, { username, email, cpf, dob, phone, password, confirmPassword }, { responseType: 'text' })
+      .pipe(
+        catchError(this.handleError)
+      );
   }
-
-  login(username: string, password: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, { username, password });
+  
+  private handleError(error: HttpErrorResponse) {
+    // Aqui você pode adicionar lógica para lidar com o erro, como exibir uma mensagem ao usuário.
+    console.error('Ocorreu um erro:', error);
+    return throwError('Erro ao processar a solicitação. Por favor, tente novamente.');
   }
 }
