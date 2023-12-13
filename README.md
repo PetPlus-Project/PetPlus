@@ -130,7 +130,7 @@
 
 * ### IA's Usadas:
     - [ChatGPT 3.5](https://chat.openai.com/)
-    - [Template Badges](https://github.com/iuricode/readme-template/blob/main/badges/badges.md)
+    - [Bing - Image Creator](https://www.bing.com/images/create)
 
 
 <hr>
