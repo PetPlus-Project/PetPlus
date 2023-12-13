@@ -128,8 +128,8 @@
 * ### Site Modelo
     - [Petz](https://petz.com.br)
 
-* Badges
-    - [Shields](https://shields.io/)
+* ### IA's Usadas:
+    - [ChatGPT 3.5](https://chat.openai.com/)
     - [Template Badges](https://github.com/iuricode/readme-template/blob/main/badges/badges.md)
 
 
