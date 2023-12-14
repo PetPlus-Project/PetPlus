@@ -1,82 +1,39 @@
-h2 {
-  text-align: center;
-  margin-top: 40px;
-  font-family: 'Anton', sans-serif;
-  color: rgb(0, 0, 89);
-}
-h3{
-  text-align: center;
-  color: white;
-}
-.tabela {
-  background-color: rgb(135, 134, 134);
-  margin-left: auto;
-  margin-top: 40px;
-  margin-right: auto;
-  width: 900px; /* Ajuste a largura conforme necessário */
-  height: 400px;
-  padding: 20px;
-  border-radius: 30px;
-  font-size: 21px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.847); /* Adiciona box-shadow */
-  font-family: 'Rethink Sans', sans-serif;
-  text-shadow: 0 1px 8px rgb(0, 0, 0); /* Adiciona box-shadow */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.linhalabel,
-.linhadois {
+.container-pagamento{
+  margin-top: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  width: 80%;
+  background-color: bisque;
+  height: 800px;
 }
-
-.input-grande {
-  width: 700px;
+.container-pagamento .container-carrinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container-pagamento .container-inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.titulo{
+  text-align: center;
+}
+.icones i{
+  font-size: 24px;
+ margin: 10px;
+}
+.icones button{
+  cursor: pointer;
   border: none;
-}
-
-.input-pequena {
-  width: 100px;
-  margin-right: 70px;
-  border: none;
-}
-
-.numcart {
-  margin-left: 20px;
-}
-
-.data {
-  margin-left: 40px;
-}
-
-.linhalabel label,
-.linhadois label {
-  width: 45%; /* Ajusta a largura das labels */
-  text-align: left; /* Alinha as labels à esquerda */
-}
-
-input {
-  border-radius: 10px;
-  width: 45%; /* Ajusta a largura dos inputs */
-  height: 50px;
-}
-
-button {
-  width: 200px; /* Defina a largura desejada */
-  margin-top: 50px;
-  height: 70px; /* Defina a altura desejada */
-  border-radius: 20px;
-  background-color: rgb(0, 173, 207);
-  color: white;
-  border: none;
-  font-size: 18px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354); /* Adiciona box-shadow */
-}
-
-button:hover {
-  background-color: rgba(2, 119, 142, 0.557);
+  background: transparent;
 }

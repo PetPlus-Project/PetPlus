@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="wrap">
         <h1>Página de Produtos</h1>
         <div class="store-wrapper">
             <div class="category_list">
-                <button class="category_item" (click)="filterProducts('all')" [class.ct_item-active]="activeCategory === 'all'">Todos</button>
-                <button class="category_item" (click)="filterProducts('racao')" [class.ct_item-active]="activeCategory === 'racao'">Comidas</button>
-                <button class="category_item" (click)="filterProducts('brinquedos')" [class.ct_item-active]="activeCategory === 'brinquedos'">Brinquedos</button>
-                <button class="category_item" (click)="filterProducts('acessorios')" [class.ct_item-active]="activeCategory === 'acessorios'">Acessórios</button>
+                <button class="category_item" (click)="filterProducts('all')"
+                    [class.ct_item-active]="activeCategory === 'all'">Todos</button>
+                <button class="category_item" (click)="filterProducts('racao')"
+                    [class.ct_item-active]="activeCategory === 'racao'">Comidas</button>
+                <button class="category_item" (click)="filterProducts('brinquedos')"
+                    [class.ct_item-active]="activeCategory === 'brinquedos'">Brinquedos</button>
+                <button class="category_item" (click)="filterProducts('acessorios')"
+                    [class.ct_item-active]="activeCategory === 'acessorios'">Acessórios</button>
             </div>
             <section class="products-list">
                 <div *ngFor="let product of products; trackBy: trackByFn" class="product-item">
                     <img [src]="product.image" alt="">
-                    <a href="#" (click)="adicionarProdutoAoCarrinho(product)"><h1>{{ product.name }}</h1>
+                    <a href="#" (click)="adicionarProdutoAoCarrinho(product)">
+                        <h1>{{ product.name }}</h1>
                         <button>{{ product.preco }}</button>
                     </a>
-                  </div>
+                </div>
+
+                <div class="carrinho-flutuante" *ngIf="carrinhoAberto">
+                    <div class="carrinho-header">
+                        <h2>Carrinho de Compras</h2>
+                        <button class="fechar-carrinho" (click)="fecharCarrinho()"><img src="assets/img/Carrinho/x.png"
+                                alt=""></button>
+                    </div>
+                    <div *ngFor="let item of carrinhoItens; let i = index">
+                        <div class="container-carrinho">
+                            <div class="item-carrinho">
+                                {{ item.nome }} - {{ item.preco }}
+                                <button class="remover-item" (click)="removerDoCarrinho(i)">Remover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Total: R$ {{ total.toFixed(2) }}</span>
+                    <button class="btnCompra" (click)="finalizarCompra()"><a href="/pagamento">Finalizar Compra</a></button>
+                </div>
             </section>
         </div>
     </div>
 </body>
+
 </html>

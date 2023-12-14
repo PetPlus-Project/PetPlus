@@ -10,36 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QMpF/7vfeZlB9p3s18sCjGRs8VBR8qEXpA1jeqmjfVpOfnIa0GkW+r8pN52W+IVIvWz0zRU/utUg0XsUbh/oag==" crossorigin="anonymous" />
+
 </head>
 
 
 <body>
+  <div class="container-pagamento">
+    <div class="container-carrinho">
+      <h1>Produtos irão aparecer aqui</h1>
+    </div>
 
-
-  <div>
-    <h2>Página de Pagamento</h2>
-    <form class="tabela" (submit)="processarPagamento()">
-      
-      <div class="cartao">
-        <h3>Seus dados do cartão de crédito</h3>
-        <br>
-        <div class="linhalabel">
-          <label>Nome no Cartão:</label>
-          <input class="input-grande" type="text" [(ngModel)]="dadosCartao.nome" placeholder="Nome Completo" required>
-          <label class="numcart">Número do Cartão:</label>
-          <input class="input-grande" type="text" [(ngModel)]="dadosCartao.numero" placeholder="1234 5678 9012 3456"
-            required>
-        </div>
-        <br>
-        <div class="linhadois">
-          <label class="data">Data de Validade:</label>
-          <input class="input-pequena" type="text" [(ngModel)]="dadosCartao.validade" placeholder="MM/AA" required>
-          <label class="codg">Código de Segurança:</label>
-          <input class="input-pequena" type="text" [(ngModel)]="dadosCartao.codigoSeguranca" placeholder="CVC" required>
-        </div>
-        <button type="submit">Confirmar Pagamento</button>
-      </div>
-    </form>
+    <div class="container-inputs">
+      <h1>Inputs</h1>
+    </div>
   </div>
 </body>
