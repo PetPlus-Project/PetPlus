@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Backend-FAZENDO-blue?style=for-the-badge" alt="backend" />
-  <img src="https://img.shields.io/badge/Documentação-FAZENDO-blue?style=for-the-badge" alt="documentação" />
-  <img src="https://img.shields.io/badge/Mobile-FAZENDO-blue?style=for-the-badge" alt="mobile" />
-  <img src="https://img.shields.io/badge/Site-FAZENDO-blue?style=for-the-badge" alt="site" />
+   <img src="https://img.shields.io/badge/Backend-FINALIZADO-blue?style=for-the-badge" alt="backend" />
+  <img src="https://img.shields.io/badge/Documentação-FINALIZADO-blue?style=for-the-badge" alt="documentação" />
+  <img src="https://img.shields.io/badge/Responsividade-FINALIZADO-blue?style=for-the-badge" alt="mobile" />
+  <img src="https://img.shields.io/badge/Site-FINALIZADO-blue?style=for-the-badge" alt="site" />
 </p>
 <hr>
 <br>
@@ -70,7 +70,7 @@
 </p> <br><br>
 
 <p align="left">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Ferramentas Utilizadas 👋" alt="Typing SVG" /></a>
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 3 - Ferramentas Utilizadas 🧰" alt="Typing SVG" /></a>
    <p>
       <table>
   <thead>
