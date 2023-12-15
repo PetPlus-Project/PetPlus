@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Backend-FINALIZADO-blue?style=for-the-badge" alt="backend" />
-  <img src="https://img.shields.io/badge/Documentação-FINALIZADO-blue?style=for-the-badge" alt="documentação" />
-  <img src="https://img.shields.io/badge/Responsividade-FINALIZADO-blue?style=for-the-badge" alt="mobile" />
-  <img src="https://img.shields.io/badge/Site-FINALIZADO-blue?style=for-the-badge" alt="site" />
+   <img src="https://img.shields.io/badge/Backend-FEITO-blue?style=for-the-badge" alt="backend" />
+  <img src="https://img.shields.io/badge/Documentação-FEITO-blue?style=for-the-badge" alt="documentação" />
+  <img src="https://img.shields.io/badge/Responsividade-FEITO-blue?style=for-the-badge" alt="mobile" />
+  <img src="https://img.shields.io/badge/Site-FEITO-blue?style=for-the-badge" alt="site" />
 </p>
 <hr>
 <br>
