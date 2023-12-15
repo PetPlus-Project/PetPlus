@@ -70,27 +70,37 @@
 </p> <br><br>
 
 <p align="left">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 3 - Ferramentas Utilizadas 🧰" alt="Typing SVG" /></a>
-   <p>
-      <table>
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 3 -Ferramentas Utilizadas 🧰" alt="Typing SVG" /></a>
+   <p>  
+      
+  <table>
   <thead>
     <tr>
       <th> Linguagens </th>
       <th> Frameworks </th>
+      <th> Outros </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"/> </td>
-      <td align="center"> <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap badge"/> </td>
+      <td align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"/> </td>
+       <td align="center"> <img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="angular badge" style="width: 100%"/> </td>
+        <td align="center"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="postgres badge"/> </td>
+    </tr>
+     <tr>
+         <td align="center"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"/> </td>
+         <td align="center"> <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap badge"/> </td>
+         <td align="center"> <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="vscode badge"/> </td>
+      </tr>
+    <tr>
+      <td align="center"> <img src="https://img.shields.io/badge/TypeScript-31948f?style=for-the-badge&logo=typescript&logoColor=black" alt="JavaScript Badge" style="width: 100%"/> </td>
+        <td align="center"> </td>
+        <td align="center"> <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="JavaScript Badge"/> </td>
     </tr>
     <tr>
-      <td align="center"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge" style="width: 100%"/> </td>
-      <td align="center"> <img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="angular badge" style="width: 100%"/> </td>
-    </tr>
-    <tr>
-      <td align="center"> <img  width="100" height="30"; src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP badge"/> </td>
-      <td align="center"> <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="laravel badge" style="width: 100%"/> </td>
+      <td align="center"> <img  width="100" height="30"; src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="js badge" style="width: 100%"/> </td>
+      <td align="center"> </td>
+       <td align="center"> <img  width="100" height="30"; src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/> </td>
     </tr>
   </tbody>
 </table>
