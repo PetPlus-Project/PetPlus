@@ -110,10 +110,23 @@
 </p> <br><br>
 
 <p align="left">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Desafios Enfrentados 👋" alt="Typing SVG" /></a>
-    <p>
-      lorem ipsum dolor
-   </p> 
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 4 - Desenvolvimento 💼" alt="Typing SVG" /></a> 
+
+### - Ficamos desenvolvendo este projeto por quase 2 meses e tivemos diversos objetivos do que queríamos entregar ao final deste projeto. Entre algumas delas, podemos `destacar`: 
+
+#### • Site minimalista e visualmente agradável;
+#### • Responsividade;
+#### • Front-End e Back-End alinhados e integrados;
+#### • Uso de API's;
+#### • Fazer bom uso do Framework escolhido. No nosso caso, o Angular CLI;
+#### • Possuir uma identidade visual e fazer bom uso da paleta de cores para o nosso site;
+#### • Teste e Depuração;
+#### • Documentação de todo o nosso projeto.
+       
+### - Estes foram os nossos objetivos, porém também tivemos dificuldades ao longo deste caminho. Como maiores dificuldades, podemos `destacar`: 
+#### • Utilizar o Angular CLI não foi nada fácl no começo, porém, com o passar dos dias e semanas, conseguimos evoluir e saber lidar melhor com este framework.
+#### • Adicionar algumas funcionalidades também foi uma de nossas dificuldades, pois além de precisar criar serviços, precisávamos também tipar a linguagem para Typescript.
+#### • Fazer a integração com o Banco de Dados PostgresSQL também não foi fácil, porém conseguimos finalizar a tempo.
    <p> <br><br>
 
    <p align="left">
