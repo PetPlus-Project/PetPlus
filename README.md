@@ -57,6 +57,9 @@
  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=ffffff&repeat=false&random=false&width=435&lines=%23ffffff)](https://git.io/typing-svg)
 </p>
 
+### - Fontes do Nosso Projeto:
+
+
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Telas e Visuais 👋" alt="Typing SVG" /></a>
    <p>
