@@ -1,11 +1,14 @@
+// home components ts
+
 import { Component } from '@angular/core';
 import { CarrinhoService } from '../../services/carrinho.service';
+import { PagamentoService } from '../../services/pagamento.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [CarrinhoService]
 })
 export class HomeComponent {
   carrinhoItens: any[] = [];
@@ -64,7 +67,11 @@ export class HomeComponent {
   { nome: 'Cama Ortopédica Meau', descricao: 'Proporcione o descanso ideal para seu pet com a Cama Ortopédica "Meau". Projetada para oferecer suporte a animais com necessidades ortopédicas, esta cama proporciona conforto excepcional e alívio da pressão.', preco: 201.99, parcelas: 'ou 3x de R$ 67,33'}
   ];
 
-  constructor(private carrinhoService: CarrinhoService) {
+  constructor(
+    private carrinhoService: CarrinhoService,
+    private pagamentoService: PagamentoService,
+    private router: Router
+  ) {
     this.carrinhoService.carrinhoItems$.subscribe(items => {
       this.carrinhoItens = items;
       this.atualizarTotal();
@@ -88,7 +95,9 @@ export class HomeComponent {
   }
 
   finalizarCompra() {
-    // Lógica para finalizar a compra
+    const produtosNoCarrinho = this.carrinhoItens.slice(); // Cria uma cópia dos itens no carrinho
+    this.pagamentoService.setProdutosNoCarrinho(produtosNoCarrinho);
+    this.router.navigate(['/pagamento']);
   }
 
   private atualizarTotal() {

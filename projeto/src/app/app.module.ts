@@ -15,7 +15,7 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ProdutosService } from './components/services/produtos.service';
 import { CarrinhoService } from './components/services/carrinho.service';
 import { PagamentoComponent } from './components/pagamento/pagamento.component';
-
+import { PagamentoService } from './components/services/pagamento.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { PagamentoComponent } from './components/pagamento/pagamento.component';
     HttpClientModule, // Adicione o HttpClientModule aqui
     RouterModule.forRoot([])
   ],
-  providers: [CarrinhoService, ProdutosService],
+  providers: [CarrinhoService, ProdutosService, PagamentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

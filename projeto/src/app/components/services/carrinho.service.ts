@@ -26,6 +26,7 @@ export class CarrinhoService {
   }
 
   adicionarProdutoAoCarrinho(produto: any) {
+    console.log('Produto adicionado:', produto);
     const carrinhoAtual = this.carrinhoItemsSubject.value;
     const novoCarrinho = [...carrinhoAtual, produto];
     this.carrinhoItemsSubject.next(novoCarrinho);

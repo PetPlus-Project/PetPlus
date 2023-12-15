@@ -1,10 +1,48 @@
+// produtos service
+
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProdutosService {
+  private carrinhoItemsSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
+  carrinhoItems$: Observable<any[]> = this.carrinhoItemsSubject.asObservable();
+
+  private carrinhoAbertoSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  carrinhoAberto$: Observable<boolean> = this.carrinhoAbertoSubject.asObservable();
+
+  toggleCarrinho() {
+    this.carrinhoAbertoSubject.next(!this.carrinhoAbertoSubject.value);
+  }
+
+  abrirCarrinho() {
+    this.carrinhoAbertoSubject.next(true);
+  }
+
+  fecharCarrinho() {
+    this.carrinhoAbertoSubject.next(false);
+  }
+
+  adicionarProdutoAoCarrinho(produto: any) {
+    console.log('Produto adicionado:', produto);
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    const novoCarrinho = [...carrinhoAtual, produto];
+    this.carrinhoItemsSubject.next(novoCarrinho);
+    this.abrirCarrinho();  // Abre o carrinho ao adicionar um item
+  }
+
+  removerDoCarrinho(index: number) {
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    const novoCarrinho = carrinhoAtual.filter((item, i) => i !== index);
+    this.carrinhoItemsSubject.next(novoCarrinho);
+  }
+
+  calcularTotal(): number {
+    const carrinhoAtual = this.carrinhoItemsSubject.value;
+    return carrinhoAtual.reduce((total, item) => total + item.preco, 0);
+  }
   private products: any[] = [
     { name: 'Ração Golden', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racao1.webp', preco: 89.99 },
     { name: 'Ração Smash', category: 'racao', image: 'assets/img/imgProdutos/imgRacao/racao2.png', preco: 79.99 },

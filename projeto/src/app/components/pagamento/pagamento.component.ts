@@ -1,20 +1,21 @@
-import { Component } from '@angular/core';
+// pagamento.component.ts
+
+import { Component, OnInit } from '@angular/core';
+import { PagamentoService } from '../services/pagamento.service';
 
 @Component({
   selector: 'app-pagamento',
   templateUrl: './pagamento.component.html',
-  styleUrls: ['./pagamento.component.css']
+  styleUrls: ['./pagamento.component.css'],
 })
-export class PagamentoComponent {
-  dadosCartao = {
-    numero: '',
-    nome: '',
-    validade: '',
-    codigoSeguranca: ''
-  };
+export class PagamentoComponent implements OnInit {
+  produtosNoCarrinho: any[] = [];
 
-  processarPagamento() {
-    // Aqui você pode implementar a lógica de processamento do pagamento
-    console.log('Processando pagamento:', this.dadosCartao);
+  constructor(private pagamentoService: PagamentoService) {}
+
+  ngOnInit() {
+    this.produtosNoCarrinho = this.pagamentoService.getProdutosNoCarrinho();
   }
+
+  // Adicione lógica relacionada ao pagamento, se necessário
 }

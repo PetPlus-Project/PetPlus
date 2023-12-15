@@ -1,3 +1,5 @@
+// produtos components ts
+
 import { Component, OnInit } from '@angular/core';
 import { ProdutosService } from '../services/produtos.service';
 import { CarrinhoService } from '../services/carrinho.service';
@@ -6,7 +8,6 @@ import { CarrinhoService } from '../services/carrinho.service';
   selector: 'app-produtos',
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css'],
-  providers: [CarrinhoService]
 })
 export class ProdutosComponent implements OnInit {
    // Variáveis para a filtragem de cards

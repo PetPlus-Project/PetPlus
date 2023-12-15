@@ -33,7 +33,7 @@
                     <img [src]="product.image" alt="">
                     <a href="#" (click)="adicionarProdutoAoCarrinho(product)">
                         <h1>{{ product.name }}</h1>
-                        <button>{{ product.preco }}</button>
+                            <button (click)="adicionarProdutoAoCarrinho(product)">{{product.preco}}</button>
                     </a>
                 </div>
 
