@@ -19,7 +19,7 @@
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Introdução 😀" alt="Typing SVG" /></a>
 
    ### - Seja bem-vindo(a) à documentação deste projeto. Aqui, você encontrará uma descrição detalhada sobre a `PetPlus`, comparações dos protótipos de nossas páginas com o resultado final delas, imagens e gifs mostrando por completo o site, além de dificuldades que encontramos durante o desenvolvimento e muito mais!
-</p> <br><br>
+</p> <br><br><br>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Descrição 📜" alt="Typing SVG" /></a>
@@ -30,7 +30,7 @@
 
    ### - O projeto foi feito por 3 integrantes, com os links de seus perfis sendo colocados no final da documentação.
 
-</p> <br><br>
+</p> <br><br><br>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 1 - Briefing 📝" alt="Typing SVG" /></a>
@@ -71,7 +71,7 @@
 ### - Caso queira ver os protótipos que fizemos no próprio Figma antes de começarmos a de fato desenvolver o site, [clique aqui](https://www.figma.com/file/3FevJ7CR0rwW6pgxoMJSIq/PetPlus?type=design&mode=design&t=i9acHESIY2PO4moB-0).
 
 ### - Caso queira ver apenas as imagens por aqui dos protótipos que fizemos no próprio Figma antes de começarmos a de fato desenvolver o site, [clique aqui](https://github.com/PetPlus-Project/PetPlusAtualizado/blob/main/Docs/figma.md).
-</p> <br><br><br>
+</p> <br><br><br><br>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 3 -Ferramentas Utilizadas 🧰" alt="Typing SVG" /></a>
@@ -109,7 +109,7 @@
   </tbody>
 </table>
    </p>
-</p> <br><br>
+</p> <br><br><br><br>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 4 - Desenvolvimento 💼" alt="Typing SVG" /></a> 
@@ -124,7 +124,7 @@
 #### • Possuir uma identidade visual e fazer bom uso da paleta de cores para o nosso site;
 #### • Teste e Depuração;
 #### • Documentação de todo o nosso projeto.
-       
+<br><br>
 ### - Estes foram os nossos objetivos, porém também tivemos dificuldades ao longo deste caminho. Como maiores dificuldades, podemos `destacar`: 
 #### • Utilizar o Angular CLI não foi nada fácl no começo, porém, com o passar dos dias e semanas, conseguimos evoluir e saber lidar melhor com este framework.
 #### • Adicionar algumas funcionalidades também foi uma de nossas dificuldades, pois além de precisar criar serviços, precisávamos também tipar a linguagem para Typescript.
@@ -164,10 +164,10 @@
   </table>
 </div>
    </p>
-   <p> <br><br>
+   <p> <br><br><br>
 
    <p align="left">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Referências 👋" alt="Typing SVG" /></a>
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Referências 📜" alt="Typing SVG" /></a>
 
 * ### Site Modelo:
     - [Petz](https://petz.com.br)
@@ -175,7 +175,18 @@
 * ### IA's Usadas:
     - [ChatGPT 3.5](https://chat.openai.com/)
     - [Bing - Image Creator](https://www.bing.com/images/create)
-
+ 
+* ### UX/UI:
+  - [Figma](https://www.figma.com/)
+  
+* ### Outros:
+  - [YouTube](https://www.youtube.com/)
+  - [Documentação](https://github.com/shyoutarou/README-Model/blob/master/README.md)
+  - [Badges](https://dev.to/)
 
 <hr>
    <p> <br><br>
+    <p align="left">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Conclusão 👋" alt="Typing SVG" /></a>
+
+ ### - Este foi o nosso projeto contendo algumas partes do nosso desenvolvimento, além de um feedback de nossas maiores dificuldades. Espero que tenham gostado. Até mais!
