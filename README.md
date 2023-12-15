@@ -42,7 +42,10 @@
 
    ### - Antes de começarmos a produzir qualquer coisa, precisávamos antes definir nossas `metas` e `objetivos` a cada semana, com o intuito de não nos perdermos e termos um pouco de organização. Caso queira ver as metas que definimos a cada semana, [clique aqui](https://github.com/PetPlus-Project/PetPlusAtualizado/blob/main/Docs/briefing.md).
 
-   ### - Como público alvo, procuramos atingir as necessidades dos `donos de pets` que procuravam produtos de todos os tipos para os seus animais, desde rações e brinquedos comuns do dia a dia até mesmo produtos especiais para animais que possuem algum tipo de deficiência ou que já é idoso e está com a mobilidade baixa, como por exemplo uma cama ortopédica.
+   ### - Como `público alvo`, procuramos atingir as necessidades dos `donos de pets` que procuravam produtos de todos os tipos para os seus animais, desde rações e brinquedos comuns do dia a dia até mesmo produtos especiais para animais que possuem algum tipo de deficiência ou que já é idoso e está com a mobilidade baixa, como por exemplo uma cama ortopédica.
+
+   ### - Nossas `Paletas de Cores`: 
+   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=78fff6&repeat=false&random=false&width=435&lines=%23EE9C2E)](https://git.io/typing-svg)
 </p> <br><br>
 
 <p align="left">
