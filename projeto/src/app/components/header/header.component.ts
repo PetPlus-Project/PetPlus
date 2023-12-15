@@ -1,5 +1,3 @@
-// header.component.ts
-
 import { Component } from '@angular/core';
 import { CarrinhoService } from '../services/carrinho.service';
 
@@ -26,4 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-

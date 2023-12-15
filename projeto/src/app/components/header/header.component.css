@@ -160,68 +160,149 @@ header {
 .navbar a:hover::before{
     width: 100%;
 }
-#menu-icon{
+
+#menu-icon {
+    display: none;
     font-size: 35px;
     color: var(--text-color);
     cursor: pointer;
-    z-index: 10001;
-    display: none;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-@media (max-width: 1090px) {
-    #menu-icon{
-        display: block;
+.navbar a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: #0ef;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+/* Adicione as regras para telas menores */
+@media (max-width: 768px) {
+    .search-logo-wrapper {
+        display: none; /* Oculta a barra de pesquisa */
     }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: 37vh;
-        background: var(--main-color);
-        display: flex;
+
+    #menu-icon {
+        display: block; /* Exibe o ícone do hamburguer */
+    }
+
+    .navbar {
+        display: none; /* Oculta a barra de navegação */
         flex-direction: column;
-        justify-content: flex-start;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: var(--main-color);
         border-radius: 10px;
-        transition: all .50s ease;
     }
-    .navbar a{
+
+    .navbar a {
+        margin: 10px;
+    }
+    body.menu-open .navbar {
         display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all .50s ease;
-    }
-    .navbar a:hover{
-        color: var(--text-color);
-        transform: translateY(5px);
-    }
-    .navbar a.active{
-        color: var(--text-color)
-    }
-    .navbar.open{
-        right: 2%;
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .navbar {
-        flex-direction: row; /* Restaura o layout para linha */
-        justify-content: space-around; /* Distribui os itens uniformemente */
     }
 
-    .navbar a {
-        margin: 0; /* Remove a margem aplicada anteriormente */
-    }
 }
-
-/* Media Query para telas grandes (largura acima de 992px) */
-@media screen and (min-width: 993px) {
-    .navbar {
-        flex-direction: row; /* Mantém o layout para linha */
-        justify-content: space-evenly; /* Distribui os itens uniformemente */
-    }
-
-    .navbar a {
-        margin: 10px; /* Restaura a margem para o valor original */
-    }
-}
+#menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }

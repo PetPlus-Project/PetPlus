@@ -41,30 +41,34 @@ app.post('/signup', async (req, res) => {
 });
 app.post('/login', async (req, res) => {
   try {
-    const { login, password } = req.body;
+    const { email, password } = req.body;
 
-    // Realize a verificação de autenticação aqui, comparando login e senha com o banco de dados
-    const result = await pool.query('SELECT * FROM usuarios WHERE (email = $1 OR username = $1) AND password = $2', [login, password]);
+    const result = await pool.query('SELECT * FROM usuarios WHERE email = $1', [email]);
+    const user = result.rows[0];
 
-    if (result.rows.length > 0) {
-      // Se houver uma correspondência, você pode gerar um token JWT e enviá-lo de volta para o cliente
-
-      // Exemplo simples de geração de token:
-      const token = jwt.sign({ login }, 'your-secret-key');
-
-      res.status(200).json({ token });
-    } else {
-      // Se não houver correspondência, envie uma mensagem de erro
-      res.status(401).json({ message: 'Credenciais inválidas' });
+    if (!user) {
+      res.status(401).send('Email ou senha incorretos');
+      return;
     }
+
+    const passwordMatch = await bcrypt.compare(password, user.password);
+
+    if (!passwordMatch) {
+      res.status(401).send('Email ou senha incorretos');
+      return;
+    }
+
+    const token = jwt.sign({ userId: user.id }, 'seuSegredoDoJWT', { expiresIn: '1h' });
+
+    res.status(200).json({ message: 'Login bem-sucedido', token });
+
   } catch (error) {
     console.error(error);
-    res.status(500).send('Erro interno do servidor ao tentar fazer login');
+    res.status(500).send('Erro interno do servidor ao fazer login');
   }
 });
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Servidor está ouvindo na porta ${port}`);
 });
-
-

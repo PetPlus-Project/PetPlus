@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   email: string = '';
   password: string = '';
-  mensagemErro: string = ''; // Adicione esta linha
+  mensagemErro: string = '';
 
   constructor(private loginService: LoginService, private router: Router) {}
 
@@ -19,14 +19,16 @@ export class LoginComponent {
     this.loginService.login(this.email, this.password).subscribe(
       (response) => {
         console.log('Login bem-sucedido:', response);
-        // Adicione aqui uma lógica para exibir a mensagem de sucesso ao usuário
+        // Exibe mensagem de sucesso
+        this.mensagemErro = 'Login efetuado com sucesso';
 
         // Redireciona para a página desejada após o login
-        this.router.navigate(['/dashboard']); // Substitua '/dashboard' pela rota desejada
+        this.router.navigate(['']); // Substitua '/dashboard' pela rota desejada
       },
       (error) => {
         console.error('Erro ao fazer login', error);
-        // Adicione aqui uma lógica para exibir a mensagem de erro ao usuário
+        // Exibe mensagem de erro
+        this.mensagemErro = 'Email ou senha incorretos';
       }
     );
   }

@@ -85,7 +85,7 @@ body {
   }
   .linha-vertical {
     border-left: 1px solid #000; /* Cor e espessura da linha */
-    height: 700px; /* Altura da linha */
+    height: 745px; /* Altura da linha */
     margin: 0 20px; /* Espaçamento à esquerda e à direita da linha */
   }
   .login-message {
