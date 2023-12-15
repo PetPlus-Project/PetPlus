@@ -69,6 +69,10 @@
 ### - Caso queira ver os protótipos que fizemos no Figma antes de começarmos a de fato desenvolver o site, [clique aqui](https://github.com/PetPlus-Project/PetPlusAtualizado/blob/main/Docs/figma.md).
 </p> <br><br>
 
+<p alignn="left">
+       <img src="Docs/imgs/header.jpg" width="400px" alt="Typing SVG" />
+   </p>
+
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Ferramentas Utilizadas 👋" alt="Typing SVG" /></a>
    <p>
