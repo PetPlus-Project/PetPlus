@@ -66,7 +66,7 @@
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 2 - Figma 🖌️" alt="Typing SVG" /></a>
    <p>
-      lorem ipsum dolor
+      ### - Caso queira ver os protótipos que fizemos no Figma antes de começarmos a de fato desenvolver o site, 
    </p>
 </p> <br><br>
 
