@@ -6,23 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pagamento.component.css">
   <title>Pagamento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QMpF/7vfeZlB9p3s18sCjGRs8VBR8qEXpA1jeqmjfVpOfnIa0GkW+r8pN52W+IVIvWz0zRU/utUg0XsUbh/oag==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-QMpF/7vfeZlB9p3s18sCjGRs8VBR8qEXpA1jeqmjfVpOfnIa0GkW+r8pN52W+IVIvWz0zRU/utUg0XsUbh/oag=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;600&display=swap"
+    rel="stylesheet">
 
 </head>
 
 
 <body>
-  <div class="container-pagamento">
-    <div class="container-carrinho">
-      <h1>Produtos irão aparecer aqui</h1>
+  <section class="pagamento">
+    <div class="title-pagamento">
+      <h1>Área de Pagamento - 💵
+
+      </h1>
     </div>
 
-    <div class="container-inputs">
-      <h1>Inputs</h1>
+    <div class="container-pagamento">
+      <div class="container-carrinho">
+        <h1>Produtos irão aparecer aqui</h1>
+      </div>
+
+      <div class="container-inputs">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+        </select>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label>Método de Pagamento:</label>
+
+        <div class="metodo-pagamento">
+          <div class="pagamento-grupo">
+            <div class="pagamento-input">
+              <label for="cartao">Cartão de Crédito</label>
+              <input type="radio" id="cartao" name="metodoPagamento" value="cartao" required>
+            </div>
+          </div>
+          <div class="pagamento-grupo">
+            <div class="pagamento-input">
+              <label for="pix">Pix</label>
+              <input type="radio" id="pix" name="metodoPagamento" value="pix" required>
+            </div>
+          </div>
+          <div class="pagamento-grupo">
+            <div class="pagamento-input">
+              <label for="boleto">Boleto Bancário</label>
+              <input type="radio" id="boleto" name="metodoPagamento" value="boleto" required>
+            </div>
+          </div>
+        </div>
+        <button class="efetuar">Efetuar Compra</button>
+      </div>
     </div>
-  </div>
+  </section>
 </body>

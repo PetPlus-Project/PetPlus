@@ -1,39 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;600&display=swap');
 body{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-pagamento{
+
+.pagamento{
+  border-radius: 40px;
   margin-top: 10%;
+  width: 80%;
+  height: 800px;
+  background-color: rgb(89, 188, 228);
+}
+.title-pagamento{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 5%;
+  text-align: center;
+}
+.container-pagamento{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+ .container-carrinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container-carrinho::after{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  top: 130%;
+  right: 50%;
+  transform: translateY(-50%);
+  background: #16095a;
+}
+ .container-inputs{
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  flex-direction: column;
+  width: 50%;
+}
+.container-inputs label{
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3em;
+}
+.container-inputs input, select{
   width: 80%;
-  background-color: bisque;
-  height: 800px;
-}
-.container-pagamento .container-carrinho{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-.container-pagamento .container-inputs{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-.titulo{
-  text-align: center;
-}
-.icones i{
-  font-size: 24px;
- margin: 10px;
-}
-.icones button{
-  cursor: pointer;
+  border-radius: 40px;
   border: none;
-  background: transparent;
+  margin-bottom: 30px;
+}
+.metodo-pagamento{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  font-size: 1em;
+}
+.pagamento-input{
+  color: rgb(33, 34, 119);
+  font-size: 0.9em;
+}
+button{
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 40px;
+  color: rgb(255, 255, 255);
+  background: rgb(31, 31, 219);
+  margin-right: 5%;
+  height: 50px;
+}
+button:hover{
+  transition: background 0.5s, color 0.5s;
+  background: rgb(55, 66, 168);
 }
