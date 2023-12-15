@@ -44,9 +44,18 @@
 
    ### - Como `público alvo`, procuramos atingir as necessidades dos `donos de pets` que procuravam produtos de todos os tipos para os seus animais, desde rações e brinquedos comuns do dia a dia até mesmo produtos especiais para animais que possuem algum tipo de deficiência ou que já é idoso e está com a mobilidade baixa, como por exemplo uma cama ortopédica.
 
-   ### - Nossas `Paletas de Cores`: 
-   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=78fff6&repeat=false&random=false&width=435&lines=%23EE9C2E)](https://git.io/typing-svg)
-</p> <br><br>
+   ### - Nossas `Paletas de Cores`:
+   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=78fff6&repeat=false&random=false&width=435&lines=%2378fff6)](https://git.io/typing-svg)
+</p>
+
+ [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3297d1&repeat=false&random=false&width=435&lines=%233297d1)](https://git.io/typing-svg)
+</p>
+
+ [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0048a1&repeat=false&random=false&width=435&lines=%230048a1)](https://git.io/typing-svg)
+</p>
+
+ [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=ffffff&repeat=false&random=false&width=435&lines=%23ffffff)](https://git.io/typing-svg)
+</p>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Telas e Visuais 👋" alt="Typing SVG" /></a>
