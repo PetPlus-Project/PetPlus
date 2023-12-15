@@ -4,7 +4,7 @@
 
 ### - Nosso `Header` + `Carrossel`:
 <p alignn="left">
-       <img src="imgs/header.jpg" width="700px" alt="Typing SVG" />
+       <img src="imgs/header.JPG" width="700px" alt="Typing SVG" />
    </p>
 
 ### - Nosso `Carrossel de Cards`:
