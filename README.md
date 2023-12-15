@@ -64,12 +64,12 @@
 #### • Poppins
 #### • Roboto
 
-<br><br>
+<br><br><br>
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 2 - Figma 🖌️" alt="Typing SVG" /></a>
      
 ### - Caso queira ver os protótipos que fizemos no Figma antes de começarmos a de fato desenvolver o site, [clique aqui](https://www.figma.com/file/3FevJ7CR0rwW6pgxoMJSIq/PetPlus?type=design&mode=design&t=i9acHESIY2PO4moB-0).
-</p> <br><br>
+</p> <br><br><br>
 
 <p align="left">
    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=440&size=22&pause=1000&color=38F77CFF&center=false&vCenter=false&repeat=false&width=435&lines=Etapa 3 -Ferramentas Utilizadas 🧰" alt="Typing SVG" /></a>
